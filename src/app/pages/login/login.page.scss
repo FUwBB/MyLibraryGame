@@ -1,5 +1,5 @@
 ion-content {
-    --background: #ffff00 url('../../../assets/imgs/7a70d750ff687647359e058cb70b1da5.jpg') no-repeat center center / cover !important;
+    --background: url('../../../assets/imgs/7a70d750ff687647359e058cb70b1da5.jpg') no-repeat center center / cover !important;
 }
 .input{
     font-size: 300;
@@ -43,10 +43,12 @@ ion-item{
 
 .titulo{
     font-size: 50px;
+    color: white;
 }
 .reg{
     text-align: center;
     font-size: 20px;
+    color: white;
 }
 
 a{
