@@ -1,0 +1,96 @@
+.ion-page {
+    margin-top: 30px;
+}
+  
+.Mylg {
+    position: absolute;
+    width: 178px;
+    height: 22px;
+    left: 100px;
+    top: 20px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+  
+.login {
+    position: absolute;
+    width: 100px;
+    height: 44px;
+    left: 300px;
+    top: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    color: #FFFFFF;
+}
+  
+.barra {
+    position: absolute;
+    width: 300px;
+    height: 58px;
+    left: 45px;
+    top: 90px;
+}
+.GameContent {
+    margin-top: 150px;
+    font-weight: 700;
+}
+.cards-container {
+    justify-content: flex-start; 
+}
+  
+ion-content {
+    .img-fluid {
+      width: 100%;
+      height: auto;
+      max-width: 300px;
+    }
+  
+    ion-header {
+      --background: #3880ff;
+      color: white;
+    }
+  
+    h3 {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+  
+    ion-list {
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+  
+    p {
+      margin-top: 1rem;
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  
+    .ion-padding {
+      padding: 20px;
+    }
+  
+    .ion-grid {
+      margin: 0 auto;
+      padding: 10px;
+    }
+  }
+
+.equipe{
+    color: white;
+    text-decoration: none;
+}
+  
+
+
+
+
+  

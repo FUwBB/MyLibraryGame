@@ -1,0 +1,110 @@
+<ion-content [fullscreen]="true"> 
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar></ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="person"></ion-icon>Meu Perfil
+        </ion-item>
+        <ion-item>
+          <ion-icon name="settings"></ion-icon>Configurações
+        </ion-item>
+        <ion-item>
+          <ion-icon name="person-add"></ion-icon> <a [routerLink]="['/equipe']" class="equipe">Equipe</a>
+        </ion-item>
+      </ion-list>
+    </ion-content>  
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-header>
+  </div>
+
+  <div>
+    <a [routerLink]="['/login']">
+      <ion-title class="login">Login</ion-title>
+    </a>
+  </div>
+  <a [routerLink]="['/index']">
+    <h1 class="Mylg">MyLibraryGame</h1>
+  </a>
+
+  <ion-searchbar class="barra" show-cancel-button="never" placeholder="Pesquisar..."></ion-searchbar>
+  <div class="GameContent">
+    <h3>Lançamento do Ano</h3>
+    <a href="#" class="seemore">Ver Mais</a>
+    <div class="cards-container">
+      <ion-card>
+        <ion-list>
+          <img src="../../../assets/imgs/wukong.png" />
+        </ion-list>
+      </ion-card>
+  
+      <ion-card>
+        <ion-list>
+          <img src="../../../assets/imgs/astrobot.png" />
+        </ion-list>
+      </ion-card>
+  
+      <ion-card>
+        <ion-list>
+          <img src="../../../assets/imgs/tk8.png" />
+        </ion-list>
+      </ion-card>
+    </div>
+  </div>
+
+  <div class="GameContent2">
+    <h3>Piores Jogos</h3>
+    <a href="#" class="seemore2">Ver Mais</a>
+    <div class="cards-container">
+      <ion-card>
+        <ion-list>
+          <img src="../../../assets/imgs/rambo.png" />
+        </ion-list>
+      </ion-card>
+  
+      <ion-card>
+        <ion-list>
+          <img src="../../../assets/imgs/superman64.png" />
+        </ion-list>
+      </ion-card>
+  
+      <ion-card>
+        <ion-list>
+          <img src="../../../assets/imgs/mineiro.png" />
+        </ion-list>
+      </ion-card>
+    </div>
+  </div>
+
+  <div class="GameContent2">
+    <h3>Mais Populares</h3>
+    <a href="#" class="seemore3">Ver Mais</a>
+    <div class="cards-container">
+      <ion-card>
+        <ion-list>
+          <img src="../../../assets/imgs/zelda.png" />
+        </ion-list>
+      </ion-card>
+  
+      <ion-card>
+        <ion-list>
+          <img src="../../../assets/imgs/gta.png" />
+        </ion-list>
+      </ion-card>
+  
+      <ion-card>
+        <ion-list>
+          <img src="../../../assets/imgs/rd2.png" />
+        </ion-list>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,102 @@
+.ion-page {
+    margin-top: 30px;
+}
+  
+.Mylg {
+    position: absolute;
+    width: 178px;
+    height: 22px;
+    left: 100px;
+    top: 20px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+  
+.login {
+    position: absolute;
+    width: 100px;
+    height: 44px;
+    left: 300px;
+    top: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    color: #FFFFFF;
+}
+  
+.barra {
+    position: absolute;
+    width: 300px;
+    height: 58px;
+    left: 45px;
+    top: 90px;
+}
+.GameContent {
+    margin-top: 150px;
+    font-weight: 700;
+}
+    .cards-container {
+      display: flex;
+      justify-content: flex-end; /* Alinha os itens à direita */
+      align-items:center;
+      gap:0;
+    }
+  
+    ion-card {
+      flex: 0 0 120px; /* Define uma largura fixa para os cards */
+      background-color: transparent; /* Remove o fundo do card */
+      box-shadow: none; /* Remove a sombra do card */
+      margin: 1px;
+    }  
+    img {
+      width: 100px; /* A imagem ocupará toda a largura disponível no card */
+      height: 100px;
+      border: none; /* Remove qualquer borda da imagem */
+      box-shadow: none; /* Remove qualquer sombra da imagem */
+      border-radius: 10px;
+    }
+  
+  ion-list{
+    background-color: transparent;
+  }
+  
+.seemore{
+position: absolute;
+left: 300px;
+top: 168px;
+text-align: center;
+color: #FFFFFF;
+font-weight: 200;
+}
+
+.seemore2{
+    position: absolute;
+    left: 300px;
+    top: 341px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 200; 
+}
+
+.seemore3{
+    position: absolute;
+    left: 300px;
+    top: 515px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 200;  
+}
+
+h3{
+    font-weight: 700;
+}
+.equipe{
+    color: white;
+    text-decoration: none;
+}

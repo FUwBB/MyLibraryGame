@@ -1,0 +1,145 @@
+<ion-content [fullscreen]="true"> 
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar></ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="person"></ion-icon>Meu Perfil
+        </ion-item>
+        <ion-item>
+          <ion-icon name="settings"></ion-icon>Configurações
+        </ion-item>
+        <ion-item>
+          <ion-icon name="person-add"></ion-icon> <a [routerLink]="['/equipe']" class="equipe">Equipe</a>
+        </ion-item>
+      </ion-list>
+    </ion-content>  
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-header>
+  </div>
+
+  <div>
+    <a [routerLink]="['/login']">
+      <ion-title class="login">Login</ion-title>
+    </a>
+  </div>
+  <a [routerLink]="['/index']">
+    <h1 class="Mylg">MyLibraryGame</h1>
+  </a>
+
+  <ion-searchbar class="barra" show-cancel-button="never" placeholder="Pesquisar..."></ion-searchbar>
+  <br><br><br><br><br><br><br><br>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-lg="4" data-aos="fade-right">
+        <img src="assets/imgs/davi-tenorio.png" class="img-fluid" alt="Davi Tenório" />
+      </ion-col>
+      <ion-col size-lg="8" class="pt-4 content" data-aos="fade-left">
+        <h3>Davi Tenório</h3>
+        <ion-row>
+          <ion-col size-lg="6">
+            <ion-list>
+              <ion-item>
+                <strong>Cursando:</strong> <span>Análise e Des. de Sistemas</span>
+              </ion-item>
+              <ion-item>
+                <strong>Cidade:</strong> <span>Rio de Janeiro - RJ</span>
+              </ion-item>
+              <ion-item>
+                <strong>Local:</strong> <span>R. Fonseca, Bangu - RJ 21820-005</span>
+              </ion-item>
+              <ion-item>
+                <strong>Turno:</strong> <span>Noturno <b>18:30</b> às <b>21:10h</b></span>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+          <ion-col size-lg="6">
+            <ion-list>
+              <ion-item>
+                <strong>Matrícula:</strong> <span>23201861</span>
+              </ion-item>
+              <ion-item>
+                <strong>Email:</strong> <span>davieteixeira0gmail.com</span>
+              </ion-item>
+              <ion-item>
+                <strong>Links:</strong> 
+                <span>
+                  <a href="https://www.linkedin.com/in/daviteixeiratenorio/">LinkedIn</a>,
+                  <a href="https://www.instagram.com/ttnorio/">Instagram</a>,
+                  <a href="https://twitter.com/tteno_rio">Twitter</a>
+                </span>
+              </ion-item>
+              <ion-item>
+                <strong>Freelance:</strong> <span>Available</span>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+        <p>
+          Atualmente estudante de <b>Análise e Desenvolvimento de Sistemas</b>, com experiência em design gráfico. Sempre gostei de tecnologia e de criar coisas novas, e acredito que essas duas áreas <b>podem se complementar muito</b> bem.
+        </p>
+      </ion-col>
+    </ion-row>
+
+    <!-- Informação sobre Gleidson Cruz -->
+    <ion-row>
+      <ion-col size-lg="4" data-aos="fade-right">
+        <img src="assets/imgs/gleidson.png" class="img-fluid" alt="Gleidson Cruz" />
+      </ion-col>
+
+      <ion-col size-lg="8" class="pt-4 content" data-aos="fade-left">
+        <h3>Gleidson Cruz</h3>
+        <ion-row>
+          <ion-col size-lg="6">
+            <ion-list>
+              <ion-item>
+                <strong>Cursando:</strong> <span>Análise e Des. de Sistemas</span>
+              </ion-item>
+              <ion-item>
+                <strong>Cidade:</strong> <span>Rio de Janeiro - RJ</span>
+              </ion-item>
+              <ion-item>
+                <strong>Local:</strong> <span>R. Fonseca, Bangu - RJ 21820-005</span>
+              </ion-item>
+              <ion-item>
+                <strong>Turno:</strong> <span>Noturno <b>18:30</b> às <b>21:10h</b></span>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+          <ion-col size-lg="6">
+            <ion-list>
+              <ion-item>
+                <strong>Matrícula:</strong> <span>23201773</span>
+              </ion-item>
+              <ion-item>
+                <strong>Email:</strong> <span>gleidsoncruz33gmail.com</span>
+              </ion-item>
+              <ion-item>
+                <strong>Links:</strong> 
+                <span>
+                  <a href="https://www.linkedin.com/in/gleidson-cruz-100889265/">LinkedIn</a>,
+                  <a href="https://www.instagram.com/fuub_fuub">Instagram</a>,
+                  <a href="https://twitter.com/ikew_te">Twitter</a>
+                </span>
+              </ion-item>
+              <ion-item>
+                <strong>Freelance:</strong> <span>Available</span>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+        <p>
+          Atualmente estudante de <b>Análise e Desenvolvimento de Sistemas</b>, proeficiente em inglês e adepto a realizar da melhor forma todas as tarefas que me são entregues.
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
