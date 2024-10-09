@@ -23,7 +23,15 @@ const routes: Routes = [
   {
     path: 'equipe',
     loadChildren: () => import('./equipe/equipe.module').then( m => m.EquipePageModule)
+  },  {
+    path: 'meuperfil',
+    loadChildren: () => import('./meuperfil/meuperfil.module').then( m => m.MeuperfilPageModule)
   },
+  {
+    path: 'configuracao',
+    loadChildren: () => import('./configuracao/configuracao.module').then( m => m.ConfiguracaoPageModule)
+  },
+
 ];
 
 @NgModule({
