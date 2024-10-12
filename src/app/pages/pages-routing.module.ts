@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'configuracao',
     loadChildren: () => import('./configuracao/configuracao.module').then( m => m.ConfiguracaoPageModule)
   },
+  {
+    path: 'game-detail',
+    loadChildren: () => import('./game-detail/game-detail.module').then( m => m.GameDetailPageModule)
+  },
 
 ];
 

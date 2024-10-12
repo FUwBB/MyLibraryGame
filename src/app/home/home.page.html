@@ -1,1 +1,21 @@
-OLA MUNDO
+<ion-content [fullscreen]="true"> 
+    <div class="box">  
+      <div class="ion-page" id="main-content">
+        <ion-header>
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+        </ion-header>
+      </div>
+  
+      <ion-searchbar class="barra" show-cancel-button="never" placeholder="Pesquisar..."></ion-searchbar>
+      
+      <div class="GameContent">
+        <div class="cards-container">
+          <ion-card *ngFor="let game of games" (click)="openGameDetails(game.id)">
+            <ion-list>
+              <img [src]="game.background_image" alt="{{ game.name }}"/>
+            </ion-list>
+          </ion-card>
+        </div>
+  

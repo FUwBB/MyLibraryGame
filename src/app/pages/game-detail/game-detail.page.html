@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ gameDetails.name }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="game-details">
+    <img [src]="gameDetails.background_image" alt="Game Image" />
+    <p><strong>Sinopse:</strong> {{ gameDetails.description_raw }}</p>
+    <p><strong>Desenvolvedora:</strong> {{ gameDetails.developers[0]?.name }}</p>
+    <p><strong>Nota:</strong> {{ gameDetails.metacritic }}</p>
+    <p><strong>Lançamento:</strong> {{ gameDetails.released | date }}</p>
+  </div>
+</ion-content>

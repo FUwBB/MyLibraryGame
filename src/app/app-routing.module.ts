@@ -38,6 +38,10 @@ const routes: Routes = [
   {
     path: 'meuperfil',
     loadChildren: () => import('./pages/meuperfil/meuperfil.module').then( m => m.MeuperfilPageModule)
+  },
+  {
+    path: 'game-detail/:id',
+    loadChildren: () => import('./pages/game-detail/game-detail.module').then(m => m.GameDetailPageModule)
   }
 ];
 
