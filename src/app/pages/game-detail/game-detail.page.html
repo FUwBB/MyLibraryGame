@@ -7,6 +7,7 @@
 <ion-content>
   <div class="game-details">
     <img [src]="gameDetails.background_image" alt="Game Image" />
+    <ion-button expand="block" a href="../index">Voltar</ion-button> 
     <p><strong>Sinopse:</strong> {{ gameDetails.description_raw }}</p>
     <p><strong>Desenvolvedora:</strong> {{ gameDetails.developers[0]?.name }}</p>
     <p><strong>Nota:</strong> {{ gameDetails.metacritic }}</p>
