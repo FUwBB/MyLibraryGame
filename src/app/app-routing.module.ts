@@ -42,7 +42,7 @@ const routes: Routes = [
   {
     path: 'game-detail/:id',
     loadChildren: () => import('./pages/game-detail/game-detail.module').then(m => m.GameDetailPageModule)
-  }
+  },
 ];
 
 @NgModule({
