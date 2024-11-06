@@ -1,16 +1,50 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>{{ gameDetails.name }}</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-  <div class="game-details">
+<ion-content [fullscreen]="true"> 
+  <div class="box">
+    <ion-menu contentId="main-content">
+      <ion-header>
+        <ion-toolbar></ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-item>
+            <ion-icon name="person"></ion-icon>Meu Perfil
+          </ion-item>
+          <ion-item>
+            <ion-icon name="settings"></ion-icon>Configurações
+          </ion-item>
+          <ion-item>
+            <ion-icon name="person-add"></ion-icon> <a [routerLink]="['/equipe']" class="equipe">Equipe</a>
+          </ion-item>
+        </ion-list>
+      </ion-content>  
+    </ion-menu>
+  
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+      </ion-header>
+    </div>
+  
+    <div>
+      <a [routerLink]="['/login']">
+        <ion-title class="login">Login</ion-title>
+      </a>
+    </div>
+    <a [routerLink]="['/index']">
+      <h1 class="Mylg">MyLibraryGame</h1>
+    </a>
+  
+    <ion-searchbar class="barra" show-cancel-button="never" placeholder="Pesquisar..."></ion-searchbar>
+    </div>
+    <br><br><br><br><br><br>
+    
     <img [src]="gameDetails.background_image" alt="Game Image" />
-    <ion-button expand="block" a href="../index">Voltar</ion-button> 
-    <p><strong>Sinopse:</strong> {{ gameDetails.description_raw }}</p>
+    <h1>{{ gameDetails.name }}</h1>
+    <ion-button expand="block" [routerLink]="['/index']">Voltar</ion-button> 
+    <p><strong>Sinopse:</strong> {{ gameDetails.manualSynopsis }}</p>
     <p><strong>Desenvolvedora:</strong> {{ gameDetails.developers[0]?.name }}</p>
-    <p><strong>Nota:</strong> {{ gameDetails.metacritic }}</p>
+    <p><strong>Nota:</strong> {{ gameDetails.manualRating }}</p> 
     <p><strong>Lançamento:</strong> {{ gameDetails.released | date }}</p>
-  </div>
 </ion-content>

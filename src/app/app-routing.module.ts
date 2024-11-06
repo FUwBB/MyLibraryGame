@@ -43,6 +43,18 @@ const routes: Routes = [
     path: 'game-detail/:id',
     loadChildren: () => import('./pages/game-detail/game-detail.module').then(m => m.GameDetailPageModule)
   },
+  {
+    path: 'popular',
+    loadChildren: () => import('./pages/popular/popular.module').then(m => m.PopularPageModule)
+  },
+  {
+    path: 'piores',
+    loadChildren: () => import('./pages/piores/piores.module').then(m => m.PioresPageModule)
+  },
+  {
+    path: 'lancamento',
+    loadChildren: () => import('./pages/lancamento/lancamento.module').then(m => m.LancamentoPageModule)
+  }
 ];
 
 @NgModule({

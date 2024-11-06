@@ -23,7 +23,8 @@ const routes: Routes = [
   {
     path: 'equipe',
     loadChildren: () => import('./equipe/equipe.module').then( m => m.EquipePageModule)
-  },  {
+  },
+  {
     path: 'meuperfil',
     loadChildren: () => import('./meuperfil/meuperfil.module').then( m => m.MeuperfilPageModule)
   },
@@ -34,7 +35,18 @@ const routes: Routes = [
   {
     path: 'game-detail',
     loadChildren: () => import('./game-detail/game-detail.module').then( m => m.GameDetailPageModule)
+  },  {
+    path: 'popular',
+    loadChildren: () => import('./popular/popular.module').then( m => m.PopularPageModule)
   },
+  {
+    path: 'piores',
+    loadChildren: () => import('./piores/piores.module').then( m => m.PioresPageModule)
+  },
+  {
+    path: 'lancamento',
+    loadChildren: () => import('./lancamento/lancamento.module').then( m => m.LancamentoPageModule)
+  }
 
 ];
 
