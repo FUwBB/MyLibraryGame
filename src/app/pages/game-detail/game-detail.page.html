@@ -46,5 +46,5 @@
     <p><strong>Sinopse:</strong> {{ gameDetails.manualSynopsis }}</p>
     <p><strong>Desenvolvedora:</strong> {{ gameDetails.developers[0]?.name }}</p>
     <p><strong>Nota:</strong> {{ gameDetails.manualRating }}</p> 
-    <p><strong>Lançamento:</strong> {{ gameDetails.released | date }}</p>
+    <p><strong>Lançamento:</strong> {{ gameDetails.manualFormattedDate }}</p>
 </ion-content>
