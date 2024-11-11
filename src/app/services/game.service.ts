@@ -26,26 +26,52 @@ export class GameService {
 
     982817:'Astro Bot Rescue Mission (2024) é um jogo de plataforma em VR onde o jogador controla Astro, um pequeno robô que precisa resgatar sua tripulação, a Bot Crew, espalhada por diversos mundos. Em cenários repletos de desafios e obstáculos criativos, Astro enfrenta inimigos, resolve quebra-cabeças e explora áreas escondidas para reunir seu time. O jogo utiliza mecânicas avançadas de realidade virtual, proporcionando uma experiência imersiva onde os jogadores realmente sentem que fazem parte do universo do Astro, explorando e interagindo com o ambiente virtual.',
 
-    987537:'Black Myth: Wukong é um RPG de ação inspirado no clássico conto chinês Jornada ao Oeste, que narra a história do Rei Macaco, Sun Wukong, e suas aventuras lendárias. No jogo, você controla Wukong em um mundo rico e deslumbrante, onde enfrenta uma variedade de inimigos, desde criaturas fantásticas a seres mitológicos, utilizando uma combinação de habilidades mágicas, transformações e um combate ágil com o bastão característico do personagem.'
+    987537:'Black Myth: Wukong é um RPG de ação inspirado no clássico conto chinês Jornada ao Oeste, que narra a história do Rei Macaco, Sun Wukong, e suas aventuras lendárias. No jogo, você controla Wukong em um mundo rico e deslumbrante, onde enfrenta uma variedade de inimigos, desde criaturas fantásticas a seres mitológicos, utilizando uma combinação de habilidades mágicas, transformações e um combate ágil com o bastão característico do personagem.',
+
+    989580:'',
+
+
   };
 
   private manualRatings: { [id: number]: number } = {
+    //MELHORES JOGOS
     28: 97,
     3498: 97,
     25097: 99,
+    
+    //PIORES JOGOS
     17936: 34,
     825734: 26,
     427543: 20,
-    850705: 90,
-    982817: 94,
+
+    //LANÇAMENTOS
     987537: 81,
+    982817: 94,
+    850705: 90,
+    799266: 75,
+    989580: 83,
+    963212: 94,
+    962025: 89,
+    804753: 86,
   };
 
   private manualReleaseDates: { [id: number]: string } = {
-    28: '2018-10-26', 
-    3498: '2013-09-17', 
-    25097: '1998-11-21', 
-    799266: '2000-12-20'
+    28: '26 out 2018', 
+    3498: '17 set 2013', 
+    25097: '21 nov 1998', 
+    17936:'21 fev 2014',
+    825734: '22 jun 2000',
+    427543:'3 jan 2020',
+    850705:'26 jan 2024',
+    982817:'6 set 2024',
+    987537:'20 ago 2024',
+    799266: '4 jul 2024',
+    989580:'25 set 2024',
+    963212:'11 out 2024',
+    972995:'? ? 2025',
+    962025:'25 jan 2024',
+    891532:'? ? 2025',
+    804753:'21 mar 2024',
   };
 
   constructor(private http: HttpClient) {}
@@ -57,17 +83,24 @@ export class GameService {
   getGameDetails(gameId: number): Observable<any> {
     return this.http.get(`https://api.rawg.io/api/games/${gameId}?key=${this.apiKey}`).pipe(
       map((game: any) => {
-        const rawDate = this.manualReleaseDates[game.id] || game.released;
-        game.manualFormattedDate = this.formatDate(rawDate);
+        game.manualSynopsis = this.manualSynopses[game.id] || '';
+        game.manualRating = this.manualRatings[game.id] || null;
+        game.manualReleaseDate = this.manualReleaseDates[game.id] || game.released;
         return game;
       })
     );
   }
-  
-  private formatDate(dateString: string): string {
-      const date = new Date(dateString);
-      const options: Intl.DateTimeFormatOptions = { month: 'short', day: '2-digit', year: 'numeric' };
-      return date.toLocaleDateString('en-US', options).replace(',', '');
-  }
 
-}
+  private formatDate(dateString: string): string {
+    const [year, month, day] = dateString.split('-').map(Number);
+    const date = new Date(Date.UTC(year, month - 1, day));
+    
+    const options: Intl.DateTimeFormatOptions = {
+      day: '2-digit',
+      month: 'short',
+      year: 'numeric'
+    };
+    return date.toLocaleDateString('pt-BR', options).replace(',', '');
+  }
+  
+}  
