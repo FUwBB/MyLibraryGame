@@ -1,13 +1,132 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>piores</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true"> 
+  <div class="box">
+    <ion-menu contentId="main-content">
+      <ion-header>
+        <ion-toolbar></ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-item>
+            <ion-icon name="person"></ion-icon>Meu Perfil
+          </ion-item>
+          <ion-item>
+            <ion-icon name="settings"></ion-icon>Configurações
+          </ion-item>
+          <ion-item>
+            <ion-icon name="person-add"></ion-icon> 
+            <a [routerLink]="['/equipe']" class="equipe">Equipe</a>
+          </ion-item>
+        </ion-list>
+      </ion-content>  
+    </ion-menu>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">piores</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+      </ion-header>
+    </div>
+
+    <div>
+      <a [routerLink]="['/login']">
+        <ion-title class="login">Login</ion-title>
+      </a>
+    </div>
+    
+    <a [routerLink]="['/index']">
+      <h1 class="Mylg">MyLibraryGame</h1>
+    </a>
+
+    <ion-searchbar class="barra" show-cancel-button="never" placeholder="Pesquisar..."></ion-searchbar>
+
+    <div class="GameContent">
+      <h3>Piores Notas</h3>
+      <div class="cards-container">
+        <ion-card (click)="openGameDetails(17936)"> 
+          <ion-list>
+            <img src="../../../assets/imgs/rambo.png" />
+          </ion-list>
+        </ion-card>
+
+        <ion-card (click)="openGameDetails(825734)"> 
+          <ion-list>
+            <img src="../../../assets/imgs/superman64.png" />
+          </ion-list>
+        </ion-card>
+
+        <ion-card (click)="openGameDetails(427543)"> 
+          <ion-list>
+            <img src="../../../assets/imgs/mineiro.png" />
+          </ion-list>
+        </ion-card>
+      </div>
+    </div>
+
+    <div class="GameContent2">
+      <div class="cards-container">
+        <ion-card (click)="openGameDetails(2956)">
+          <ion-list>
+            <img src="../../../assets/imgs/Tony.avif" />
+          </ion-list>
+        </ion-card>
+
+        <ion-card (click)="openGameDetails(27505)"> 
+          <ion-list>
+            <img src="../../../assets/imgs/Sonicboomwiiu.jpg" />
+          </ion-list>
+        </ion-card>
+
+        <ion-card (click)="openGameDetails(3991)"> 
+          <ion-list>
+            <img src="../../../assets/imgs/alien.jpg" />
+          </ion-list>
+        </ion-card>
+      </div>
+    </div>
+
+    <div class="GameContent2">
+      <div class="cards-container">
+        <ion-card (click)="openGameDetails(55980)"> 
+          <ion-list>
+            <img src="../../../assets/imgs/batma.jpg" />
+          </ion-list>
+        </ion-card>
+
+        <ion-card (click)="openGameDetails(35607)"> 
+          <ion-list>
+            <img src="../../../assets/imgs/postal.jpg" />
+          </ion-list>
+        </ion-card>
+
+        <ion-card (click)="openGameDetails(4190)"> 
+          <ion-list>
+            <img src="../../../assets/imgs/cod.jpg" />
+          </ion-list>
+        </ion-card>
+      </div>
+    </div>
+
+    <div class="GameContent2">
+      <div class="cards-container">
+        <ion-card (click)="openGameDetails(40931)"> 
+          <ion-list>
+            <img src="../../../assets/imgs/Ravenscry.jpg" />
+          </ion-list>
+        </ion-card>
+
+        <ion-card (click)="openGameDetails(989)"> 
+          <ion-list>
+            <img src="../../../assets/imgs/fighter.jpg" />
+          </ion-list>
+        </ion-card>
+
+        <ion-card (click)="openGameDetails(24101)"> 
+          <ion-list>
+            <img src="../../../assets/imgs/twd.jpg" />
+          </ion-list>
+        </ion-card>
+      </div>
+    </div>
+  </div>
 </ion-content>

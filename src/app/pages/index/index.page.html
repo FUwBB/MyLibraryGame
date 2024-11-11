@@ -67,8 +67,8 @@
 
     <!-- Seção "Piores Jogos" -->
     <div class="GameContent2">
-      <h3>Piores Jogos</h3>
-      <a href="#" class="seemore2">Ver Mais</a>
+      <h3>Piores Notas</h3>
+      <a [routerLink]="['/piores']" class="seemore2">Ver Mais</a>
       <div class="cards-container">
         <ion-card (click)="openGameDetails(17936)">
           <ion-list>
@@ -93,7 +93,7 @@
     <!-- Seção "Mais Populares" -->
     <div class="GameContent2">
       <h3>Mais Populares</h3>
-      <a href="#" class="seemore3">Ver Mais</a>
+      <a [routerLink]="['/popular']" class="seemore3">Ver Mais</a>
       <div class="cards-container">
         <ion-card (click)="openGameDetails(25097)"> 
           <ion-list>
