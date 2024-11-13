@@ -1,0 +1,93 @@
+.ion-page {
+    margin-top: 30px;
+    color: white;
+}
+.box{
+  background-color: black;
+}
+
+.Mylg {
+    position: absolute;
+    width: 178px;
+    height: 22px;
+    left: 100px;
+    top: 20px;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+  
+.login {
+    position: absolute;
+    width: 100px;
+    height: 44px;
+    left: 300px;
+    top: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    text-align: center;
+    color: #FFFFFF;
+}
+  
+.barra {
+    width: 300px;
+    height: 58px;
+    left: 45px;
+    top: 90px;
+    border-radius:30px;
+}
+
+.GameContent {
+    margin-top: 100px;
+    font-weight: 700;
+}
+    .cards-container {
+      display: flex;
+      justify-content: flex-end; /* Alinha os itens à direita */
+      align-items:center;
+      gap:0;
+    }
+  
+    ion-card {
+      flex: 0 0 120px;
+      background-color: transparent; 
+      box-shadow: none; 
+      margin: 1px;
+    }  
+    img {
+      width: 100px; 
+      height: 100px;
+      border: none; 
+      box-shadow: none; 
+      border-radius: 10px;
+    }
+  
+  ion-list{
+    background-color: black;
+  }
+
+
+h3{
+    font-weight: 700;
+    color: white;
+}
+.equipe{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+ion-menu {
+  background-color: rgba(0, 0, 0, 0.499);
+}
+ion-content {
+  --background: black;
+}
+
+ion-list {
+  background-color: transparent; 
+}

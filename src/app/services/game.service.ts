@@ -17,6 +17,25 @@ export class GameService {
 
     25097: 'Em The Legend of Zelda: Ocarina of Time, os jogadores acompanham a jornada de Link, um jovem herói da terra de Hyrule. Convocado pela Árvore Deku, Link descobre uma antiga profecia e parte em uma missão para impedir o maligno Ganondorf de obter o poder sagrado da Triforce, uma relíquia mística capaz de conceder desejos ao seu portador.',
 
+    54751:'SoulCalibur é um jogo de luta em 3D que apresenta guerreiros em busca da espada lendária, Soul Edge. Cada personagem tem uma motivação única, desde vingança até redenção, enquanto enfrentam batalhas emocionantes. O jogo inovou com seu sistema de combate fluido e cenários em movimento, tornando-se um clássico no gênero de luta.',
+
+    4459:'GTA IV segue Niko Bellic, um imigrante do leste europeu que chega a Liberty City em busca de um novo começo e de um sonho prometido por seu primo Roman. No entanto, Niko logo se vê envolvido em uma teia de crimes, traições e intrigas enquanto navega pelo submundo da cidade em busca de vingança e respostas sobre seu passado. A história aborda temas profundos como o custo da ambição, a desilusão com o sonho americano e a busca por redenção, destacando uma narrativa madura e personagens tridimensionais em um cenário urbano vasto e detalhado.',
+
+    13537:'Half-Life 2 continua a história de Gordon Freeman, um cientista que se vê como a última esperança da humanidade após os eventos catastróficos em Black Mesa. Agora, sob a opressão do Combine, uma aliança alienígena que tomou o controle da Terra, Gordon lidera uma revolução para libertar a humanidade. A cidade de City 17, com sua arquitetura imponente e atmosfera opressora, é palco de confrontos épicos entre os rebeldes e as forças do Combine. Ao lado de Alyx Vance, uma aliada astuta e corajosa, Gordon enfrenta não apenas soldados e criaturas horríveis, mas também revela segredos sombrios sobre o controle alienígena. ',
+
+    4286:'BioShock é uma obra-prima do gênero de tiro em primeira pessoa que se passa em Rapture, uma utopia submersa criada pelo idealista Andrew Ryan. Inicialmente um refúgio para os maiores gênios da humanidade, a cidade mergulhou no caos devido ao abuso da substância conhecida como ADAM, que concede superpoderes ao usuário, mas a um custo devastador. O protagonista, Jack, sobrevive a um acidente de avião e se vê em meio aos horrores de uma sociedade autodestrutiva. Em sua jornada para escapar de Rapture, Jack descobre verdades perturbadoras sobre sua própria existência e enfrenta dilemas éticos que afetam o desenrolar da história. O jogo é famoso por sua ambientação atmosférica, design detalhado e temas filosóficos que questionam livre arbítrio, moralidade e a busca pela perfeição.',
+
+    324997:'Baldurs Gate 3 mergulha os jogadores em uma aventura épica inspirada em Dungeons & Dragons. Capturado por mind flayers e infectado com um parasita que ameaça transformar os personagens em criaturas monstruosas, o protagonista e seus companheiros improváveis se veem em uma corrida contra o tempo para encontrar uma cura. O mundo aberto e as interações dinâmicas com NPCs e eventos influenciam diretamente o desenrolar da narrativa, levando a diferentes finais. A trama é complexa, com reviravoltas políticas, alianças instáveis e uma exploração profunda das motivações pessoais dos personagens.',
+
+    416:'GTA: San Andreas segue a história de Carl "CJ" Johnson, que retorna a Los Santos após cinco anos para lidar com a morte de sua mãe e a decadência de sua gangue. CJ rapidamente se envolve em lutas de poder, corrupção policial e uma guerra de gangues que envolve todo o estado de San Andreas. A narrativa acompanha a evolução de CJ de um criminoso de rua para um líder respeitado, enquanto ele lida com traições, alianças instáveis e desafios emocionais. O jogo é um marco por seu mundo aberto expansivo, permitindo aos jogadores explorarem cidades vibrantes e áreas rurais enquanto realizam missões variadas.',
+
+    326243:'Em Elden Ring, os jogadores exploram o vasto e misterioso reino de Lands Between, um mundo criado em colaboração entre Hidetaka Miyazaki e George R. R. Martin. Após a destruição do Elden Ring, os descendentes da rainha Marika, cada um controlando um fragmento do anel, travam guerras para consolidar seu poder. Como um Tarnished, você é chamado para restaurar o anel e se tornar o próximo Lorde Elden. A história é sombria e envolvente, repleta de lendas antigas, deuses decaídos e seres mitológicos, e a exploração é acompanhada por uma jogabilidade desafiadora que exige estratégia e habilidade.',
+
+    58175:'God of War (2018) é uma reinvenção da aclamada série de ação e aventura que coloca Kratos, o Deus da Guerra, em uma jornada profundamente pessoal e emocional. Tendo deixado para trás seu passado sangrento na Grécia, ele se muda para a região fria e implacável da mitologia nórdica. Kratos vive com seu filho, Atreus, em busca de redenção e um novo propósito de vida. Após a morte de sua esposa, Kratos e Atreus partem para cumprir seu último desejo: levar suas cinzas ao pico mais alto dos nove reinos. Durante essa jornada cheia de perigos, eles enfrentam deuses e criaturas lendárias enquanto constroem uma relação marcada pelo afeto e conflitos. ',
+
+    3990:'Em The Last of Us, o mundo que conhecemos foi destruído por uma pandemia causada por um fungo parasita que transforma humanos em criaturas agressivas e sem controle. Joel, um homem endurecido pela tragédia, sobrevive em um ambiente onde a moralidade e a empatia são raras. Ele é encarregado de escoltar Ellie, uma adolescente com um segredo que pode mudar o futuro da humanidade, através de um cenário pós-apocalíptico infestado de perigos, tanto humanos quanto infectados. A relação entre Joel e Ellie evolui de maneira profunda ao longo da história, explorando o que significa amar e proteger em um mundo desolado e cruel. A narrativa é famosa por seu realismo emocional, apresentando dilemas morais complexos que desafiam as noções de certo e errado, e destacando a capacidade de resiliência em meio à perda e ao desespero.',
+
+
     //PIORES VOTADOS
 
     427543:'Um jogo de plataforma 3D muito legal, muitas aventuras radicais com nosso amigo Miner, agora temos a opção Double Miner e a aventura fica muito mais legal. A versão Directors Cut conta com cenas inéditas e nunca vistas.',
@@ -25,23 +44,23 @@ export class GameService {
 
     17936:'Rambo: The Video Game é um jogo de ação baseado nos filmes clássicos do personagem Rambo, estrelado por Sylvester Stallone. Lançado em 2014, o jogo permite que os jogadores revivam cenas icônicas dos três primeiros filmes da série, mergulhando em intensas sequências de tiroteio e combate em primeira pessoa. A narrativa se concentra nas missões de Rambo, onde ele enfrenta inimigos tanto em florestas quanto em zonas de guerra urbana, utilizando seu arsenal característico, incluindo o famoso arco e flecha.',
     
-    2956:' ',
+    2956:'Tony Hawks Pro Skater 5 traz de volta a essência clássica dos jogos de skate da franquia, com uma abordagem moderna Os jogadores podem escolher entre diversos skatistas profissionais, incluindo Tony Hawk, e participar de níveis repletos de desafios, manobras, e truques radicais. O objetivo é completar missões, alcançar altas pontuações, e explorar ambientes detalhados, além de contar com modos multijogador para competir online.',
 
-    27505: ' ',
+    27505: 'Sonic e seus amigos — Tails, Knuckles e Amy — enfrentam Lyric, um antigo vilão robótico que planeja conquistar o mundo com um exército de robôs. Os jogadores alternam entre os personagens, cada um com habilidades únicas, para resolver quebra-cabeças e passar por níveis desafiadores na tentativa de impedir o plano de Lyric e salvar o mundo.',
 
-    3991: ' ',
+    3991: 'Aliens: Colonial Marines segue uma equipe de Fuzileiros Navais Coloniais dos EUA enviados para investigar a USS Sulaco, uma nave considerada perdida. Situado no universo da franquia Alien, o jogo de tiro em primeira pessoa coloca os jogadores contra os letais Xenomorfos enquanto desvendam os segredos obscuros da Corporação Weyland-Yutani e seus experimentos.',
 
-    55980: ' ',
+    55980: 'Batman: Dark Tomorrow é um jogo de ação e aventura que coloca os jogadores na pele do Cavaleiro das Trevas em uma missão para proteger Gotham City de uma conspiração sinistra que ameaça mergulhar a cidade no caos. A história começa com Batman enfrentando um plano complexo envolvendo vilões icônicos, como o Coringa, Senhor Frio e Ra’s al Ghul, enquanto busca descobrir os segredos por trás de uma nova ameaça.',
 
-    35607: ' ',
+    35607: 'Postal III acompanha o protagonista, conhecido como The Postal Dude, em uma cidade cheia de situações bizarras e moralmente questionáveis. O jogo, um shooter em terceira pessoa, é marcado por humor negro e missões absurdas, com um conteúdo controverso e satírico.',
 
-    4190: ' ',
+    4190: 'Este título da franquia Call of Duty para o PlayStation Vita se passa entre Black Ops e Black Ops II. Oferece uma campanha com missões curtas focadas em espionagem tática e jogabilidade multiplayer intensa, com os mecanismos característicos da série.',
 
-    40931: ' ',
+    40931: 'Ravens Cry conta a história de Christopher Raven, um homem cuja vida foi tragicamente transformada após um ataque pirata que resultou na morte de sua família e o deixou mutilado. Em busca de vingança, ele se torna um anti-herói impiedoso e determinado a destruir aqueles que o prejudicaram. O jogo é ambientado nas perigosas águas do Caribe do século XVII, com uma atmosfera que mistura elementos históricos e fictícios. Ravens Cry é notório por sua narrativa sombria e brutal, abordando temas como vingança, traição e sobrevivência.',
 
-    989: ' ',
+    989: 'Fighter Within é um jogo de luta desenvolvido para o Xbox One que se destaca por seu uso do Kinect, onde os jogadores podem controlar os lutadores com movimentos reais. O objetivo do jogo é proporcionar uma experiência autêntica, simulando golpes, socos e chutes que o jogador realiza fisicamente em frente ao sensor. Com uma abordagem voltada para a imersão, Fighter Within permite que amigos enfrentem-se em combates, utilizando gestos naturais para desencadear ataques especiais e combos.',
 
-    24101: ' ',
+    24101: 'The Walking Dead: Survival Instinct funciona como um prelúdio da popular série de TV, acompanhando Daryl Dixon e seu irmão Merle nos primeiros dias do apocalipse zumbi. O jogo foca em mecânicas de sobrevivência, coleta de suprimentos e enfrentamento ou fuga de hordas de zumbis, além de decisões que impactam o desenrolar da jogabilidade. ',
 
     //LANÇAMENTOS
 
@@ -75,7 +94,16 @@ export class GameService {
     28: 97,
     3498: 97,
     25097: 99,
-    
+    54751: 98,
+    4459: 98,
+    13537: 96,
+    4286: 96,
+    324997: 96,
+    416: 95,
+    326243: 96,
+    58175: 94,
+    3990: 95,
+
     //PIORES JOGOS
     17936: 34,
     825734: 26,
@@ -106,10 +134,19 @@ export class GameService {
     28: '26 out 2018', 
     3498: '17 set 2013', 
     25097: '21 nov 1998', 
+    54751:'8 set 1999',
+    4459:'29 abr 2008',
+    13537:'16 nov 2004',
+    4286:'21 ago 2007',
+    324997:'3 ago 2023',
+    416:'26 out 2004',
+    326243:'25 fev 2022',
+    58175:'20 abr 2018',
+    3990:'14 jun 2013',
 
     //PIORES NOTAS
     17936:'21 fev 2014',
-    825734: '22 jun 2000',
+    825734:'22 jun 2000',
     427543:'3 jan 2020',
     2956:'29 set 2015',
     27505:'11 nov 2014',
@@ -121,14 +158,11 @@ export class GameService {
     989:'19 nov 2013',
     24101:'19 mar 2013',
 
-
-
-
     //LANÇAMENTOS
     850705:'26 jan 2024',
     982817:'6 set 2024',
     987537:'20 ago 2024',
-    799266: '4 jul 2024',
+    799266:'4 jul 2024',
     989580:'25 set 2024',
     963212:'11 out 2024',
     972995:'? ? 2025',

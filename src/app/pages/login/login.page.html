@@ -35,7 +35,7 @@
       </div>
 
       <div class="botao">
-        <ion-button shape="round" color="dark" [routerLink]="['/index']">Entrar</ion-button>
+        <ion-button shape="round" color="dark" (click)="loginUser()">Entrar</ion-button>
       </div>
       <div class="reg">
        <p>Não possui uma conta?<a [routerLink]="['/registrar']">Cadastre-se</a></p>
@@ -44,3 +44,4 @@
 
   </form>
 </ion-content>
+

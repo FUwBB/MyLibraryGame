@@ -3,7 +3,7 @@ import { Auth } from '@angular/fire/auth';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { LoadingController } from '@ionic/angular';
-import { AutheticationService } from 'src/app/services/authetication.service';
+import { AutheticationService } from 'src/app/services/authentication.service';
 
 @Component({
   selector: 'app-registrar',

@@ -1,13 +1,132 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>popular</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true"> 
+  <div class="box">
+    <ion-menu contentId="main-content">
+      <ion-header>
+        <ion-toolbar></ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-item>
+            <ion-icon name="person"></ion-icon>Meu Perfil
+          </ion-item>
+          <ion-item>
+            <ion-icon name="settings"></ion-icon>Configurações
+          </ion-item>
+          <ion-item>
+            <ion-icon name="person-add"></ion-icon> 
+            <a [routerLink]="['/equipe']" class="equipe">Equipe</a>
+          </ion-item>
+        </ion-list>
+      </ion-content>  
+    </ion-menu>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">popular</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+      </ion-header>
+    </div>
+
+    <div>
+      <a [routerLink]="['/login']">
+        <ion-title class="login">Login</ion-title>
+      </a>
+    </div>
+    
+    <a [routerLink]="['/index']">
+      <h1 class="Mylg">MyLibraryGame</h1>
+    </a>
+
+    <ion-searchbar class="barra" show-cancel-button="never" placeholder="Pesquisar..."></ion-searchbar>
+
+    <div class="GameContent">
+      <h3>Mais Populares</h3>
+      <div class="cards-container">
+        <ion-card (click)="openGameDetails(25097)"> 
+          <ion-list>
+            <img src="../../../assets/imgs/zelda.png" />
+          </ion-list>
+        </ion-card>
+
+        <ion-card (click)="openGameDetails(3498)"> 
+          <ion-list>
+            <img src="../../../assets/imgs/gta.png" />
+          </ion-list>
+        </ion-card>
+
+        <ion-card (click)="openGameDetails(28)"> 
+          <ion-list>
+            <img src="../../../assets/imgs/rd2.png" />
+          </ion-list>
+        </ion-card>
+      </div>
+    </div>
+
+    <div class="GameContent2">
+      <div class="cards-container">
+        <ion-card (click)="openGameDetails(54751)">
+          <ion-list>
+            <img src="../../../assets/imgs/soulcalibu.jpg" />
+          </ion-list>
+        </ion-card>
+
+        <ion-card (click)="openGameDetails(4459)"> 
+          <ion-list>
+            <img src="../../../assets/imgs/GTA4.png" />
+          </ion-list>
+        </ion-card>
+
+        <ion-card (click)="openGameDetails(13537)"> 
+          <ion-list>
+            <img src="../../../assets/imgs/half.jpg" />
+          </ion-list>
+        </ion-card>
+      </div>
+    </div>
+
+    <div class="GameContent2">
+      <div class="cards-container">
+        <ion-card (click)="openGameDetails(4286)"> 
+          <ion-list>
+            <img src="../../../assets/imgs/bioshock.png" />
+          </ion-list>
+        </ion-card>
+
+        <ion-card (click)="openGameDetails(324997)"> 
+          <ion-list>
+            <img src="../../../assets/imgs/baldur.png" />
+          </ion-list>
+        </ion-card>
+
+        <ion-card (click)="openGameDetails(416)"> 
+          <ion-list>
+            <img src="../../../assets/imgs/GTAsa.png" />
+          </ion-list>
+        </ion-card>
+      </div>
+    </div>
+
+    <div class="GameContent2">
+      <div class="cards-container">
+        <ion-card (click)="openGameDetails(326243)"> 
+          <ion-list>
+            <img src="../../../assets/imgs/elden.jpg" />
+          </ion-list>
+        </ion-card>
+
+        <ion-card (click)="openGameDetails(58175)"> 
+          <ion-list>
+            <img src="../../../assets/imgs/GOW.png" />
+          </ion-list>
+        </ion-card>
+
+        <ion-card (click)="openGameDetails(3990)"> 
+          <ion-list>
+            <img src="../../../assets/imgs/TLO.png" />
+          </ion-list>
+        </ion-card>
+      </div>
+    </div>
+  </div>
 </ion-content>
