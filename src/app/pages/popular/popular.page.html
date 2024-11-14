@@ -29,9 +29,14 @@
     </div>
 
     <div>
-      <a [routerLink]="['/login']">
-        <ion-title class="login">Login</ion-title>
-      </a>
+      <ng-container *ngIf="userName === 'Login'; else loggedInUser">
+        <a [routerLink]="['/login']">
+          <ion-title class="login">{{ userName }}</ion-title>
+        </a>
+      </ng-container>
+      <ng-template #loggedInUser>
+        <ion-title class="login">{{ userName }}</ion-title>
+      </ng-template>
     </div>
     
     <a [routerLink]="['/index']">

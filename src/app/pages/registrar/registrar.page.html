@@ -29,7 +29,7 @@
       </div>
 
       <ion-item>
-        <ion-input formControlName="password" type="password" placeholder="Digite sua senha" maxlength="9" class="input"></ion-input>
+        <ion-input formControlName="password" type="password" placeholder="Digite sua senha" class="input"></ion-input>
         <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
       </ion-item>
       <div *ngIf="this.regForm.controls?.['password'].touched && this.regForm.controls?.['password'].invalid">

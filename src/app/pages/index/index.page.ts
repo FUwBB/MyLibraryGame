@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { GameService } from '../../services/game.service';
+import { Auth } from '@angular/fire/auth';
+import { onAuthStateChanged } from '@angular/fire/auth';
+import { AutheticationService } from 'src/app/services/authetication.service';  
 
 @Component({
   selector: 'app-index',
@@ -8,13 +11,26 @@ import { GameService } from '../../services/game.service';
   styleUrls: ['./index.page.scss'],
 })
 export class IndexPage implements OnInit {
-
+  userName: string | null = 'Login';  // Inicializa com 'Login'
   games: any[] = [];  // Lista de jogos
 
-  constructor(private gameService: GameService, private router: Router) {}
+  constructor(
+    private gameService: GameService,
+    private router: Router,
+    private auth: Auth,
+    private authService: AutheticationService  
+  ) {}
 
   ngOnInit() {
-    this.loadGames();  // Carrega os jogos ao iniciar a página
+    this.loadGames();
+
+    onAuthStateChanged(this.auth, (user) => {
+      if (user) {
+        this.userName = user.displayName || '';  
+      } else {
+        this.userName = 'Login'; 
+      }
+    });
   }
 
   loadGames() {
@@ -28,8 +44,8 @@ export class IndexPage implements OnInit {
     );
   }
 
-  // Navega para a página de detalhes de um jogo específico
+  // Função para redirecionar para os detalhes do jogo
   openGameDetails(gameId: number) {
-    this.router.navigate(['/game-detail', gameId]);  // Redireciona para a página de detalhes
+    this.router.navigate(['/game-detail', gameId]);
   }
 }

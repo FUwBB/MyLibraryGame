@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { LoadingController } from '@ionic/angular';
-import { AutheticationService } from 'src/app/services/authentication.service';
+import { AutheticationService } from 'src/app/services/authetication.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -15,43 +15,42 @@ export class LoginPage implements OnInit {
   constructor(
     public formBuilder: FormBuilder,
     public loadingCtrl: LoadingController,
-    private authService: AutheticationService,
+    public authService: AutheticationService,
     private router: Router
   ) {}
 
   ngOnInit() {
     this.loginForm = this.formBuilder.group({
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, Validators.minLength(6)]],
+      email: ['', 
+        [Validators.required, 
+        Validators.pattern("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"),
+      ]],
+      password: ['', 
+        [Validators.required, 
+        Validators.pattern("^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d).{8,}$"),
+      ]]
     });
   }
+  async login() {
+    const loading = await this.loadingCtrl.create();
+    await loading.present();
 
+    if (this.loginForm?.valid) {
+      const user= await this.authService.loginUser(this.loginForm.value.email,this.loginForm.value.password).catch((error)=>{ 
+        console.log(error);
+        loading.dismiss()
+      })
+        if (user) {
+          loading.dismiss();
+          this.router.navigate(['/index']);
+        }
+    } else {
+      console.log ("bad")
+      loading.dismiss();
+    }
+  }
   get errorControl() {
     return this.loginForm.controls;
   }
 
-  async loginUser() {
-    const loading = await this.loadingCtrl.create();
-    await loading.present();
-
-    if (this.loginForm.valid) {
-      try {
-        const user = await this.authService.loginUser(
-          this.loginForm.value.email,
-          this.loginForm.value.password
-        );
-        if (user) {
-          loading.dismiss();
-          this.router.navigate(['/index']); // Ajuste a rota conforme necessário
-        }
-      } catch (error) {
-        console.error('Erro de login:', error);
-        loading.dismiss();
-        // Adicione aqui uma mensagem de erro amigável
-      }
-    } else {
-      loading.dismiss();
-      console.log('Preencha o formulário corretamente.');
-    }
-  }
 }
