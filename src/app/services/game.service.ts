@@ -35,6 +35,12 @@ export class GameService {
 
     3990:'Em The Last of Us, o mundo que conhecemos foi destruído por uma pandemia causada por um fungo parasita que transforma humanos em criaturas agressivas e sem controle. Joel, um homem endurecido pela tragédia, sobrevive em um ambiente onde a moralidade e a empatia são raras. Ele é encarregado de escoltar Ellie, uma adolescente com um segredo que pode mudar o futuro da humanidade, através de um cenário pós-apocalíptico infestado de perigos, tanto humanos quanto infectados. A relação entre Joel e Ellie evolui de maneira profunda ao longo da história, explorando o que significa amar e proteger em um mundo desolado e cruel. A narrativa é famosa por seu realismo emocional, apresentando dilemas morais complexos que desafiam as noções de certo e errado, e destacando a capacidade de resiliência em meio à perda e ao desespero.',
 
+    56123:' "Metroid Prime" segue a caçadora de recompensas Samus Aran em uma jornada pelo planeta Tallon IV, enquanto ela explora ambientes alienígenas, coleta power-ups e combate inimigos para desvendar os segredos deixados pelos antigos Chozo. O jogo, que mistura elementos de ação, aventura e tiro em primeira pessoa, apresenta uma narrativa envolvente, centrada na luta de Samus contra os Piratas Espaciais e suas experiências com a misteriosa substância chamada Phazon.A heroína enfrenta criaturas formidáveis e chefes desafiadores enquanto explora um mundo detalhado e interconectado, repleto de quebra-cabeças e desafios ambientais que a levam a aprimorar seu traje e habilidades.',
+
+    5679:'Skyrim transporta os jogadores para a vasta e épica província de Skyrim, no continente de Tamriel, um lugar repleto de montanhas geladas, ruínas antigas e vilarejos pitorescos. O jogador assume o papel do Dragonborn, um herói lendário com a habilidade de absorver as almas dos dragões e usar seus gritos de poder. A trama central envolve uma profecia que fala do retorno do dragão Alduin, o Devorador de Mundos, que ameaça destruir o mundo. Com liberdade total para explorar e interagir com o mundo, os jogadores podem escolher seguir missões secundárias, se unir a guildas, e moldar o destino de seu personagem, seja ele um guerreiro, mago ou ladrão. ',
+
+    52370:'Metal Gear Solid 2: Sons of Liberty, o jogador acompanha as missões do agente especial Raiden, que é enviado para investigar uma instalação de limpeza marítima chamada Big Shell, ocupada por um grupo terrorista conhecido como Sons of Liberty. O enredo é marcado por reviravoltas surpreendentes, temas de controle de informação e a natureza da realidade em um mundo moderno. O mentor de Raiden, Solid Snake, também desempenha um papel fundamental na narrativa, que explora a conspiração global e o controle das forças políticas e militares por uma organização secreta. O jogo é conhecido por seu roteiro complexo e cinematográfico, além de uma jogabilidade furtiva e mecânicas inovadoras para a época.',
+
 
     //PIORES VOTADOS
 
@@ -62,6 +68,12 @@ export class GameService {
 
     24101: 'The Walking Dead: Survival Instinct funciona como um prelúdio da popular série de TV, acompanhando Daryl Dixon e seu irmão Merle nos primeiros dias do apocalipse zumbi. O jogo foca em mecânicas de sobrevivência, coleta de suprimentos e enfrentamento ou fuga de hordas de zumbis, além de decisões que impactam o desenrolar da jogabilidade. ',
 
+    294133:' Dragon Ball Z: Ultimate Battle 22 é um jogo de luta baseado na popular série de anime e mangá "Dragon Ball Z". Lançado originalmente para o PlayStation, o jogo apresenta um elenco de 22 personagens jogáveis, incluindo os principais heróis e vilões da saga, como Goku, Vegeta, Piccolo, e Freeza. Cada personagem vem com seus próprios movimentos especiais e golpes que refletem as habilidades vistas no anime, como os ataques de energia e transformações em Super Saiyajin. A jogabilidade se concentra em batalhas um contra um, onde os jogadores podem realizar combos e ataques poderosos. O jogo busca capturar a essência das lutas intensas da série, com gráficos em estilo 2D e efeitos sonoros que remetem à animação.',
+
+    27903:'Vroom in the Night Sky é um jogo de ação e corrida desenvolvido para o Nintendo Switch, onde os jogadores assumem o papel de uma bruxa que viaja pelo céu em sua vassoura motorizada. O objetivo principal é coletar estrelas mágicas em diferentes níveis, cada um com cenários urbanos e paisagens noturnas. Com uma proposta inicialmente charmosa, o jogo tenta oferecer uma experiência de exploração livre enquanto a personagem realiza acrobacias aéreas. No entanto, "Vroom in the Night Sky" foi amplamente criticado por seus controles desajeitados, gráficos rudimentares e uma jogabilidade monótona que carece de desafios e variedade. ',
+
+    353423:'Bruce Lee: Quest of the Dragon é um jogo de ação beat em up que segue a lenda das artes marciais, Bruce Lee, em uma jornada pessoal para resgatar seu pai, que foi sequestrado por uma organização criminosa. O jogo coloca os jogadores em uma série de lutas intensas, onde podem usar movimentos de kung fu icônicos e golpes especiais que marcaram a carreira de Bruce Lee. Situado em diversos locais exóticos e com um enredo que mistura drama e artes marciais, o jogo tenta capturar a essência das lutas lendárias de Lee. No entanto, o título recebeu críticas por sua jogabilidade desajeitada e mecânicas repetitivas.',
+
     //LANÇAMENTOS
 
     850705:'Tekken 8 é o próximo título da aclamada série de jogos de luta da Bandai Namco, trazendo novos gráficos, jogabilidade aprimorada e uma narrativa intensa. Seguindo os eventos de Tekken 7, o jogo foca no conflito contínuo dentro da família Mishima, especialmente entre Kazuya Mishima e seu filho, Jin Kazama. Com gráficos impressionantes construídos na Unreal Engine 5, Tekken 8 promete uma experiência visual e de combate ainda mais envolvente, com uma nova mecânica de combate chamada "Heat System," que permite aos jogadores desencadear ataques mais poderosos e estratégicos.',
@@ -86,7 +98,13 @@ export class GameService {
 
     490430:'Os jogadores assumem o papel de um jovem Príncipe em uma jornada de redenção e heroísmo. Após libertar, sem querer, as Areias do Tempo, uma poderosa substância que transforma humanos em monstros, ele precisa se aliar à astuta princesa Farah para corrigir o erro. Com habilidades acrobáticas únicas, o Príncipe corre, salta e combate através de um palácio encantado repleto de armadilhas mortais, utilizando o poder das Areias para manipular o tempo, desfazer erros e resolver desafios. Esta versão moderniza os gráficos, a jogabilidade e a narrativa, trazendo uma nova vida ao clássico de 2003.',
 
-    983381:'DOOM: The Dark Ages é uma abordagem medieval da famosa série de ação em primeira pessoa. Situado em um período onde reinos caem sob o domínio infernal, você assume o papel do lendário DOOM Slayer, lutando contra hordas demoníacas em paisagens góticas e castelos sombrios. Equipado com armas medievais adaptadas, como uma serra-escudo e um mangual destruidor, o Slayer enfrenta inimigos antigos e novos em batalhas intensas e brutais. O enredo explora as origens do guerreiro e sua ascensão como protetor da humanidade em uma era sombria marcada pelo caos e pela magia negra.'
+    983381:'DOOM: The Dark Ages é uma abordagem medieval da famosa série de ação em primeira pessoa. Situado em um período onde reinos caem sob o domínio infernal, você assume o papel do lendário DOOM Slayer, lutando contra hordas demoníacas em paisagens góticas e castelos sombrios. Equipado com armas medievais adaptadas, como uma serra-escudo e um mangual destruidor, o Slayer enfrenta inimigos antigos e novos em batalhas intensas e brutais. O enredo explora as origens do guerreiro e sua ascensão como protetor da humanidade em uma era sombria marcada pelo caos e pela magia negra.',
+
+    962020:'Star Wars Outlaws é um jogo de mundo aberto que se passa entre os eventos de Star Wars: O Império Contra-Ataca e O Retorno de Jedi. A trama gira em torno de Kay Vess, uma jovem ladra corajosa que busca escapar do controle dos sindicatos criminosos que governam as bordas da galáxia. Kay, acompanhada por seu fiel companheiro alienígena Nix, se envolve em missões ousadas e enfrenta decisões arriscadas enquanto tenta realizar o maior assalto da sua vida para ganhar liberdade. O jogo destaca a exploração de planetas variados, combates intensos e a capacidade de pilotar e personalizar sua nave, trazendo a essência da rebeldia e das batalhas clássicas do universo de Star Wars.',
+
+    974379:'Dragon Ball Sparking Zero é a nova adição à série Sparking! (conhecida como Budokai Tenkaichi fora do Japão), marcando o retorno do popular estilo de luta 3D da franquia. O jogo promete uma vasta seleção de personagens de todas as eras de Dragon Ball, incluindo Dragon Ball, Dragon Ball Z, Dragon Ball Super e até filmes derivados. Com gráficos modernizados e uma jogabilidade mais fluida, os jogadores podem esperar combates em arenas abertas, onde é possível voar e utilizar ataques especiais icônicos como o Kamehameha, o Final Flash e a Genki Dama. O modo história promete trazer momentos clássicos reimaginados com detalhes cinematográficos e permitir aos jogadores reviver batalhas épicas contra vilões como Freeza, Cell e Majin Buu, além de novas adições da era contemporânea.',
+
+    891238:'Hades II é a sequência do aclamado roguelike Hades da Supergiant Games. Desta vez, a protagonista é Melinoë, irmã de Zagreus e princesa do submundo, que parte em uma missão para derrotar Cronos, o Titã do Tempo, que escapou de sua prisão e ameaça subverter a ordem dos deuses. O jogo mantém a mecânica de combate intensa e viciante de seu predecessor, com melhorias em habilidades, armas e a exploração de novos domínios do submundo. A narrativa se aprofunda na mitologia grega, explorando o papel de Melinoë como deusa dos fantasmas e sua conexão com Hades e Perséfone. Os jogadores encontrarão aliados divinos e mortais, cada um oferecendo poderes e bênçãos que modificam a jogabilidade de maneira única.'
   };
 
   private manualRatings: { [id: number]: number } = {
@@ -103,6 +121,9 @@ export class GameService {
     326243: 96,
     58175: 94,
     3990: 95,
+    56123: 97,
+    5679: 96,
+    52370:96,
 
     //PIORES JOGOS
     17936: 34,
@@ -117,6 +138,9 @@ export class GameService {
     40931: 27,
     989: 23,
     24101: 32,
+    294133: 25,
+    27903: 17,
+    353423: 32,
 
     //LANÇAMENTOS
     987537: 81,
@@ -127,6 +151,10 @@ export class GameService {
     963212: 94,
     962025: 89,
     804753: 86,
+    962020: 75,
+    974379: 81,
+    891238: 82
+
   };
 
   private manualReleaseDates: { [id: number]: string } = {
@@ -143,6 +171,9 @@ export class GameService {
     326243:'25 fev 2022',
     58175:'20 abr 2018',
     3990:'14 jun 2013',
+    56123:'17 nov 2002',
+    5679:'11 nov 2011',
+    52370:'12 nov 2001',
 
     //PIORES NOTAS
     17936:'21 fev 2014',
@@ -157,6 +188,9 @@ export class GameService {
     40931:'30 jan 2015',
     989:'19 nov 2013',
     24101:'19 mar 2013',
+    294133:'25 mar 2003',
+    27903:'5 abr 2017',
+    353423:'1 jul 2002',
 
     //LANÇAMENTOS
     850705:'26 jan 2024',
@@ -170,7 +204,11 @@ export class GameService {
     891532:'? ? 2025',
     804753:'21 mar 2024',
     490430:'? ? ?',
-    983381:'? ? 2025'
+    983381:'? ? 2025',
+    962020:'27 ago 2024',
+    974379:'11 out 2024',
+    891238:'6 mai 2024'
+
 
   };
 

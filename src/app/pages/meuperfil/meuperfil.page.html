@@ -1,13 +1,79 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>meuperfil</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true"> 
+  <div class="box">
+    <ion-menu contentId="main-content">
+      <ion-header>
+        <ion-toolbar></ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list>
+          <ion-item>
+            <ion-icon name="person"></ion-icon>Meu Perfil
+          </ion-item>
+          <ion-item>
+            <ion-icon name="settings"></ion-icon>Configurações
+          </ion-item>
+          <ion-item>
+            <ion-icon name="person-add"></ion-icon> 
+            <a [routerLink]="['/equipe']" class="equipe">Equipe</a>
+          </ion-item>
+        </ion-list>
+      </ion-content>  
+    </ion-menu>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">meuperfil</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+      </ion-header>
+    </div>
+
+    <div>
+      <ng-container *ngIf="userName === 'Login'; else loggedInUser">
+        <a [routerLink]="['/login']">
+          <ion-title class="login">{{ userName }}</ion-title>
+        </a>
+      </ng-container>
+      <ng-template #loggedInUser>
+        <ion-title class="login">{{ userName }}</ion-title>
+      </ng-template>
+    </div>
+    
+    <a [routerLink]="['/index']">
+      <h1 class="Mylg">MyLibraryGame</h1>
+    </a>
+
+    <div>
+      <ng-container *ngIf="userName === 'Login'; else loggedInUser">
+        <a [routerLink]="['/login']">
+          <ion-title class="login">{{ userName }}</ion-title>
+        </a>
+      </ng-container>
+      <ng-template #loggedInUser>
+        <ion-title class="login">{{ userName }}</ion-title>
+      </ng-template>
+    </div>
+    
+    <a [routerLink]="['/index']">
+      <h1 class="Mylg">MyLibraryGame</h1>
+    </a>
+
+    <br><br><br><br><br>
+    <h1>Seus Jogos Favoritados</h1>
+    <ion-list *ngIf="favoriteGames.length > 0; else noFavorites">
+      <ion-item *ngFor="let game of favoriteGames" (click)="openGameDetails(game.id)">
+        <ion-thumbnail slot="start">
+          <img [src]="game.image" alt="{{ game.name }}">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>{{ game.name }}</h2>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+    
+    <ng-template #noFavorites>
+      <ion-text>Nenhum jogo favoritado.</ion-text>
+    </ng-template>
+    
+  </div>
 </ion-content>

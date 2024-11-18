@@ -15,12 +15,7 @@
           <ion-item>
             <ion-icon name="person-add"></ion-icon> 
             <a [routerLink]="['/equipe']" class="equipe">Equipe</a>
-          </ion-item>
-          <ion-item *ngIf="userName !== 'Login'">
-            <ion-button (click)="logout()">
-              Sair
-            </ion-button>
-          </ion-item>            
+          </ion-item>       
         </ion-list>
       </ion-content>  
     </ion-menu>
@@ -47,8 +42,6 @@
     <a [routerLink]="['/index']">
       <h1 class="Mylg">MyLibraryGame</h1>
     </a>
-
-    <ion-searchbar class="barra" show-cancel-button="never" placeholder="Pesquisar..."></ion-searchbar>
 
     <!-- Seção "Lançamento do Ano" -->
     <div class="GameContent">

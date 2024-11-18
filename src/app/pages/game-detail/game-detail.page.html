@@ -28,23 +28,43 @@
     </div>
   
     <div>
-      <a [routerLink]="['/login']">
-        <ion-title class="login">Login</ion-title>
-      </a>
+      <ng-container *ngIf="userName === 'Login'; else loggedInUser">
+        <a [routerLink]="['/login']">
+          <ion-title class="login">{{ userName }}</ion-title>
+        </a>
+      </ng-container>
+      <ng-template #loggedInUser>
+        <ion-title class="login">{{ userName }}</ion-title>
+      </ng-template>
     </div>
+
     <a [routerLink]="['/index']">
       <h1 class="Mylg">MyLibraryGame</h1>
     </a>
   
-    <ion-searchbar class="barra" show-cancel-button="never" placeholder="Pesquisar..."></ion-searchbar>
+   
     </div>
     <br><br><br><br><br><br>
     
     <img [src]="gameDetails.background_image" alt="Game Image" />
-    <h1>{{ gameDetails.name }}</h1>
-    <ion-button expand="block" [routerLink]="['/popular']">Voltar</ion-button> 
+    <div class="game-detail">
+      <h1>{{ gameDetails.name }}</h1>  
+      <ion-button class="fav" (click)="toggleFavorite()" color="medium">
+        <ion-icon [name]="isFavorite ? 'star' : 'star-outline'"></ion-icon>
+        {{ isFavorite ? 'Desfavoritar' : 'Favoritar' }}
+      </ion-button>
+    </div>  
+    
     <p><strong>Sinopse:</strong> {{ gameDetails.manualSynopsis }}</p>
     <p><strong>Desenvolvedora:</strong> {{ gameDetails.developers[0]?.name }}</p>
     <p><strong>Nota:</strong> {{ gameDetails.manualRating }}</p> 
-    <p><strong>Lançamento:</strong> {{ gameDetails.manualReleaseDate }}</p>
+    <p><strong>Lançamento:</strong> {{ gameDetails.manualReleaseDate }}</p>   
+
+    <ion-header>
+        <ion-buttons slot="start">
+          <ion-button (click)="PagAnterior()" class="bt">
+            <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+    </ion-header>
 </ion-content>

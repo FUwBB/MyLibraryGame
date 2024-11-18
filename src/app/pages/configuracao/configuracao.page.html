@@ -37,21 +37,15 @@
     </a>
     <ion-card class="GameContent">
       <ion-card-header>
-        <h2 color="black">Trocar Senha</h2>
+        <h2 color="black">Digite seu Email para trocarmos sua senha</h2>
       </ion-card-header>
-      <form >
-          <ion-item>
-            <ion-input type="password" placeholder="Digite sua nova senha" class="input"></ion-input>
-            <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
-          </ion-item>
-          <ion-item>
-            <ion-input type="password" placeholder="Digite novamente a senha" class="input"></ion-input>
-            <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
-          </ion-item>
+      <ion-item>
+        <ion-icon slot="start" name="person-outline"></ion-icon>
+        <ion-input [(ngModel)]="email" type="email" placeholder="Digite seu email" class="input"></ion-input>
+      </ion-item>
           <div class="botao">
-            <ion-button shape="round" color="dark" [routerLink]="['/index']">Trocar</ion-button>
+            <ion-button shape="round" (click)="resetPassword()" color="dark">Enviar</ion-button>
           </div>
-    </form>
     </ion-card>
     </div>
   </ion-content>

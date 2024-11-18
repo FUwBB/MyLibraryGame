@@ -13,7 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getAuth, provideAuth } from '@angular/fire/auth';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
-import { environment } from 'src/environments/environment';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -31,4 +31,3 @@ import { environment } from 'src/environments/environment';
   bootstrap: [AppComponent],
 })
 export class AppModule {}
-

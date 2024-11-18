@@ -3,32 +3,32 @@
   <!-- Menu Lateral -->
   <ion-menu contentId="main-content">
     <ion-header>
-      <ion-toolbar color="primary">
-        <ion-title>Menu</ion-title>
+      <ion-toolbar class="custom-toolbar">
+        <ion-title class="custom-title">Menu</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content>
-      <ion-list>
-        <ion-item routerLink="/perfil" routerDirection="root">
+    <ion-content class="custom-content">
+        <ion-item class="custom-item" routerLink="/meuperfil" routerDirection="root">
           <ion-icon slot="start" name="person"></ion-icon>
-          <ion-label>Meu Perfil</ion-label>
+          <ion-label class="custom-label">Meu Perfil</ion-label>
         </ion-item>
-        <ion-item routerLink="/configuracao" routerDirection="root">
+        <ion-item class="custom-item" routerLink="/configuracao" routerDirection="root">
           <ion-icon slot="start" name="settings"></ion-icon>
-          <ion-label>Configurações</ion-label>
+          <ion-label class="custom-label">Configurações</ion-label>
         </ion-item>
-        <ion-item routerLink="/equipe" routerDirection="root">
+        <ion-item class="custom-item" routerLink="/equipe" routerDirection="root">
           <ion-icon slot="start" name="person-add"></ion-icon>
-          <ion-label>Equipe</ion-label>
+          <ion-label class="custom-label">Equipe</ion-label>
         </ion-item>
-        <ion-item *ngIf="userName !== 'Login'">
-          <ion-button (click)="logout()">
-            Sair
-          </ion-button>
-        </ion-item>    
-      </ion-list>
-    </ion-content>
+    </ion-content>    
+    
+    <ion-item *ngIf="userName !== 'Login'" class="iten">
+      <ion-button (click)="logout()" color="medium" class="log">
+        Sair
+      </ion-button>
+    </ion-item>     
   </ion-menu>
+  
 
   
 

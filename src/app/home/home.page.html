@@ -8,8 +8,7 @@
         </ion-header>
       </div>
   
-      <ion-searchbar class="barra" show-cancel-button="never" placeholder="Pesquisar..."></ion-searchbar>
-      
+
       <div class="GameContent">
         <div class="cards-container">
           <ion-card *ngFor="let game of games" (click)="openGameDetails(game.id)">

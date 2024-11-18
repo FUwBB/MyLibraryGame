@@ -23,21 +23,14 @@
         <ion-input formControlName="password" type="password" placeholder="Digite sua senha" class="input"></ion-input>
         <ion-icon slot="start" name="lock-closed-outline"></ion-icon>
       </ion-item>
-      <div *ngIf="this.loginForm.controls?.['password'].touched && this.loginForm.controls?.['password'].invalid">
-        <ion-text *ngIf="errorControl.password.errors?.required" color="danger" slot="center">
-          A senha é necessária.
-        </ion-text>
-        <ion-text *ngIf="errorControl.password.errors?.pattern" color="danger" slot="center">
-          A senha precisa de:
-           1 letra maiúscula;
-           8 caracteres;
-           1 símbolo.
-        </ion-text>
-      </div>
+      <div class="Change">
+        <a [routerLink]="['/configuracao']">Esqueceu/Trocar Senha</a>
+       </div>
 
       <div class="botao">
         <ion-button shape="round" color="dark" (click)="login()">Entrar</ion-button>
       </div>
+
       <div class="reg">
        <p>Não possui uma conta?<a [routerLink]="['/registrar']">Cadastre-se</a></p>
       </div>
