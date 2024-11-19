@@ -46,6 +46,10 @@ const routes: Routes = [
   {
     path: 'lancamento',
     loadChildren: () => import('./lancamento/lancamento.module').then( m => m.LancamentoPageModule)
+  },
+  {
+    path: 'apresentacao',
+    loadChildren: () => import('./apresentacao/apresentacao.module').then( m => m.ApresentacaoPageModule)
   }
 
 ];
