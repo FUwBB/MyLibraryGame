@@ -87,6 +87,10 @@ ion-content {
       margin: 0 auto;
       padding: 10px;
     }
+
+    h2{
+      color: white;
+    }
   }
 
   .equipe{
@@ -105,7 +109,51 @@ ion-list {
   background-color: transparent; 
 }
   
+ion-item{
+  --background: rgb(17, 17, 17);
+}
 
+
+.log{
+  border-radius: 200px;
+  color:rgb(0, 0, 0);
+  width: 50%;
+  border: none;
+  outline: none;
+  height: 40px;
+  font-size: 16px;
+}
+
+.iten{
+  --background: #000;
+}
+
+.custom-toolbar {
+  --background: #000;
+}
+
+.custom-title, .custom-label {
+  color: #fff; 
+}
+
+.custom-label {
+  color: #fff;
+      
+} 
+
+.custom-item {
+   margin-bottom: 80px; /* Ajuste o valor conforme necessário */
+  --background: #000;   
+  color: #000;
+}
+
+.custom-content {
+  --background: #000; /* Cor preta para o fundo */
+}
+
+ion-icon{
+  color: white;
+}
 
 
 

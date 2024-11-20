@@ -1,24 +1,31 @@
 <ion-content [fullscreen]="true"> 
-  <ion-menu contentId="main-content">
-    <ion-header>
-      <ion-toolbar></ion-toolbar>
-    </ion-header>
-    <ion-content>
-      <ion-list>
-        <ion-item>
-          <ion-icon name="person"></ion-icon>Meu Perfil
-        </ion-item>
-        <ion-item>
-          <ion-icon name="settings"></ion-icon>
-          <a [routerLink]="['/configuracao']" class="equipe">Configurações</a>
-        </ion-item>
-        <ion-item>
-          <ion-icon name="person-add"></ion-icon>
-          <a [routerLink]="['/equipe']" class="equipe">Equipe</a>
-        </ion-item>
-      </ion-list>
-    </ion-content>  
-  </ion-menu>
+    <ion-menu contentId="main-content">
+      <ion-header>
+        <ion-toolbar class="custom-toolbar">
+          <ion-title class="custom-title">Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="custom-content">
+          <ion-item class="custom-item" routerLink="/meuperfil" routerDirection="root">
+            <ion-icon slot="start" name="person"></ion-icon>
+            <ion-label class="custom-label">Meu Perfil</ion-label>
+          </ion-item>
+          <ion-item class="custom-item" routerLink="/configuracao" routerDirection="root">
+            <ion-icon slot="start" name="settings"></ion-icon>
+            <ion-label class="custom-label">Configurações</ion-label>
+          </ion-item>
+          <ion-item class="custom-item" routerLink="/equipe" routerDirection="root">
+            <ion-icon slot="start" name="person-add"></ion-icon>
+            <ion-label class="custom-label">Equipe</ion-label>
+          </ion-item>
+      </ion-content>    
+      
+      <ion-item *ngIf="userName !== 'Login'" class="iten">
+        <ion-button (click)="logout()" color="medium" class="log">
+          Sair
+        </ion-button>
+      </ion-item>     
+    </ion-menu>
 
   <div class="ion-page" id="main-content">
     <ion-header>
@@ -54,25 +61,25 @@
         <h2>Davi Tenório</h2>
         <ion-list>
           <ion-item>
-            <strong>Cursando:</strong> <span>Análise e Des. de Sistemas</span>
+            <p><strong>Cursando:</strong> <span>Análise e Des. de Sistemas</span></p>
           </ion-item>
           <ion-item>
-            <strong>Cidade:</strong> <span>Rio de Janeiro - RJ</span>
+            <p><strong>Cidade:</strong> <span>Rio de Janeiro - RJ</span></p>
           </ion-item>
           <ion-item>
-            <strong>Local:</strong> <span>R. Fonseca, Bangu - RJ 21820-005</span>
+            <p><strong>Local:</strong> <span>R. Fonseca, Bangu - RJ 21820-005</span></p>
           </ion-item>
           <ion-item>
-            <strong>Turno:</strong> <span>Noturno <b>18:30</b> às <b>21:10h</b></span>
+            <p><strong>Turno:</strong> <span>Noturno <b>18:30</b> às <b>21:10h</b></span></p>
           </ion-item>
           <ion-item>
-            <strong>Matrícula:</strong> <span>23201861</span>
+            <p><strong>Matrícula:</strong> <span>23201861</span></p>
           </ion-item>
           <ion-item>
-            <strong>Email:</strong> <span>davieteixeira0gmail.com</span>
+            <p><strong>Email:</strong> <span>davieteixeira0gmail.com</span></p>
           </ion-item>
           <ion-item>
-            <strong>Links:</strong>
+            <p><strong>Links:</strong></p>
             <span>
               <a href="https://www.linkedin.com/in/daviteixeiratenorio/">LinkedIn</a>,
               <a href="https://www.instagram.com/ttnorio/">Instagram</a>,
@@ -80,7 +87,7 @@
             </span>
           </ion-item>
           <ion-item>
-            <strong>Freelance:</strong> <span>Available</span>
+            <p><strong>Freelance:</strong> <span>Available</span></p>
           </ion-item>
         </ion-list>
         <ion-item>
@@ -97,28 +104,28 @@
         <img src="assets/imgs/gleidson.png" class="img-fluid" alt="Gleidson Cruz" />
       </ion-col>
       <ion-col size-md="8" size-sm="12" class="pt-4 content" data-aos="fade-left">
-        <h3>Gleidson Cruz</h3>
+        <h2>Gleidson Cruz</h2>
         <ion-list>
           <ion-item>
-            <strong>Cursando:</strong> <span>Análise e Des. de Sistemas</span>
+            <p><strong>Cursando:</strong> <span>Análise e Des. de Sistemas</span></p>
           </ion-item>
           <ion-item>
-            <strong>Cidade:</strong> <span>Rio de Janeiro - RJ</span>
+            <p><strong>Cidade:</strong> <span>Rio de Janeiro - RJ</span></p>
           </ion-item>
           <ion-item>
-            <strong>Local:</strong> <span>R. Fonseca, Bangu - RJ 21820-005</span>
+            <p><strong>Local:</strong> <span>R. Fonseca, Bangu - RJ 21820-005</span></p>
           </ion-item>
           <ion-item>
-            <strong>Turno:</strong> <span>Noturno <b>18:30</b> às <b>21:10h</b></span>
+            <p><strong>Turno:</strong> <span>Noturno <b>18:30</b> às <b>21:10h</b></span></p>
           </ion-item>
           <ion-item>
-            <strong>Matrícula:</strong> <span>23201773</span>
+            <p><strong>Matrícula:</strong> <span>23201773</span></p>
           </ion-item>
           <ion-item>
-            <strong>Email:</strong> <span>gleidsoncruz33gmail.com</span>
+            <p><strong>Email:</strong> <span>gleidsoncruz33gmail.com</span></p>
           </ion-item>
           <ion-item>
-            <strong>Links:</strong>
+            <p><strong>Links:</strong></p>
             <span>
               <a href="https://www.linkedin.com/in/gleidson-cruz-100889265/">LinkedIn</a>,
               <a href="https://www.instagram.com/fuub_fuub">Instagram</a>,
@@ -126,7 +133,7 @@
             </span>
           </ion-item>
           <ion-item>
-            <strong>Freelance:</strong> <span>Available</span>
+            <p><strong>Freelance:</strong> <span>Available</span></p>
           </ion-item>
         </ion-list>
         <ion-item>

@@ -2,23 +2,31 @@
   <div class="box">
     <ion-menu contentId="main-content">
       <ion-header>
-        <ion-toolbar></ion-toolbar>
+        <ion-toolbar class="custom-toolbar">
+          <ion-title class="custom-title">Menu</ion-title>
+        </ion-toolbar>
       </ion-header>
-      <ion-content>
-        <ion-list>
-          <ion-item>
-            <ion-icon name="person"></ion-icon>Meu Perfil
+      <ion-content class="custom-content">
+          <ion-item class="custom-item" routerLink="/meuperfil" routerDirection="root">
+            <ion-icon slot="start" name="person"></ion-icon>
+            <ion-label class="custom-label">Meu Perfil</ion-label>
           </ion-item>
-          <ion-item>
-            <ion-icon name="settings"></ion-icon>Configurações
+          <ion-item class="custom-item" routerLink="/configuracao" routerDirection="root">
+            <ion-icon slot="start" name="settings"></ion-icon>
+            <ion-label class="custom-label">Configurações</ion-label>
           </ion-item>
-          <ion-item>
-            <ion-icon name="person-add"></ion-icon> <a [routerLink]="['/equipe']" class="equipe">Equipe</a>
+          <ion-item class="custom-item" routerLink="/equipe" routerDirection="root">
+            <ion-icon slot="start" name="person-add"></ion-icon>
+            <ion-label class="custom-label">Equipe</ion-label>
           </ion-item>
-        </ion-list>
-      </ion-content>  
+      </ion-content>    
+      
+      <ion-item *ngIf="userName !== 'Login'" class="iten">
+        <ion-button (click)="logout()" color="medium" class="log">
+          Sair
+        </ion-button>
+      </ion-item>     
     </ion-menu>
-  
     <div class="ion-page" id="main-content">
       <ion-header>
         <ion-buttons slot="start">
@@ -28,10 +36,16 @@
     </div>
   
     <div>
-      <a [routerLink]="['/login']">
-        <ion-title class="login">Login</ion-title>
-      </a>
+      <ng-container *ngIf="userName === 'Login'; else loggedInUser">
+        <a [routerLink]="['/login']">
+          <ion-title class="login">{{ userName }}</ion-title>
+        </a>
+      </ng-container>
+      <ng-template #loggedInUser>
+        <ion-title class="login">{{ userName }}</ion-title>
+      </ng-template>
     </div>
+    
     <a [routerLink]="['/index']">
       <h1 class="Mylg">MyLibraryGame</h1>
     </a>
@@ -40,7 +54,7 @@
         <h2 color="black">Digite seu Email para trocarmos sua senha</h2>
       </ion-card-header>
       <ion-item>
-        <ion-icon slot="start" name="person-outline"></ion-icon>
+        <ion-icon slot="start" name="person-outline" class="tt"></ion-icon>
         <ion-input [(ngModel)]="email" type="email" placeholder="Digite seu email" class="input"></ion-input>
       </ion-item>
           <div class="botao">

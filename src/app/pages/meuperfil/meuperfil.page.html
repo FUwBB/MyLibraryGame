@@ -1,24 +1,33 @@
 <ion-content [fullscreen]="true"> 
   <div class="box">
-    <ion-menu contentId="main-content">
-      <ion-header>
-        <ion-toolbar></ion-toolbar>
-      </ion-header>
-      <ion-content>
-        <ion-list>
-          <ion-item>
-            <ion-icon name="person"></ion-icon>Meu Perfil
-          </ion-item>
-          <ion-item>
-            <ion-icon name="settings"></ion-icon>Configurações
-          </ion-item>
-          <ion-item>
-            <ion-icon name="person-add"></ion-icon> 
-            <a [routerLink]="['/equipe']" class="equipe">Equipe</a>
-          </ion-item>
-        </ion-list>
-      </ion-content>  
-    </ion-menu>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar class="custom-toolbar">
+        <ion-title class="custom-title">Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="custom-content">
+        <ion-item class="custom-item" routerLink="/meuperfil" routerDirection="root">
+          <ion-icon slot="start" name="person"></ion-icon>
+          <ion-label class="custom-label">Meu Perfil</ion-label>
+        </ion-item>
+        <ion-item class="custom-item" routerLink="/configuracao" routerDirection="root">
+          <ion-icon slot="start" name="settings"></ion-icon>
+          <ion-label class="custom-label">Configurações</ion-label>
+        </ion-item>
+        <ion-item class="custom-item" routerLink="/equipe" routerDirection="root">
+          <ion-icon slot="start" name="person-add"></ion-icon>
+          <ion-label class="custom-label">Equipe</ion-label>
+        </ion-item>
+    </ion-content>    
+    
+    <ion-item *ngIf="userName !== 'Login'" class="iten">
+      <ion-button (click)="logout()" color="medium" class="log">
+        Sair
+      </ion-button>
+    </ion-item>     
+  </ion-menu>
+
 
     <div class="ion-page" id="main-content">
       <ion-header>
