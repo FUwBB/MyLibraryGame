@@ -64,7 +64,7 @@ export class GameDetailPage implements OnInit {
         const gameData = {
           id: this.gameId,
           name: this.gameDetails.name,
-          image: this.gameDetails.image || this.gameDetails.background_image, // Certifique-se de que a imagem esteja definida corretamente
+          image: this.gameDetails.image || this.gameDetails.background_image,
           dateFavorited: new Date().toISOString(),
         };
         await setDoc(userFavoritesDoc, gameData);

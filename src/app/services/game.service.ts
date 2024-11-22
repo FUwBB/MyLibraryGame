@@ -104,7 +104,35 @@ export class GameService {
 
     974379:'Dragon Ball Sparking Zero é a nova adição à série Sparking! (conhecida como Budokai Tenkaichi fora do Japão), marcando o retorno do popular estilo de luta 3D da franquia. O jogo promete uma vasta seleção de personagens de todas as eras de Dragon Ball, incluindo Dragon Ball, Dragon Ball Z, Dragon Ball Super e até filmes derivados. Com gráficos modernizados e uma jogabilidade mais fluida, os jogadores podem esperar combates em arenas abertas, onde é possível voar e utilizar ataques especiais icônicos como o Kamehameha, o Final Flash e a Genki Dama. O modo história promete trazer momentos clássicos reimaginados com detalhes cinematográficos e permitir aos jogadores reviver batalhas épicas contra vilões como Freeza, Cell e Majin Buu, além de novas adições da era contemporânea.',
 
-    891238:'Hades II é a sequência do aclamado roguelike Hades da Supergiant Games. Desta vez, a protagonista é Melinoë, irmã de Zagreus e princesa do submundo, que parte em uma missão para derrotar Cronos, o Titã do Tempo, que escapou de sua prisão e ameaça subverter a ordem dos deuses. O jogo mantém a mecânica de combate intensa e viciante de seu predecessor, com melhorias em habilidades, armas e a exploração de novos domínios do submundo. A narrativa se aprofunda na mitologia grega, explorando o papel de Melinoë como deusa dos fantasmas e sua conexão com Hades e Perséfone. Os jogadores encontrarão aliados divinos e mortais, cada um oferecendo poderes e bênçãos que modificam a jogabilidade de maneira única.'
+    891238:'Hades II é a sequência do aclamado roguelike Hades da Supergiant Games. Desta vez, a protagonista é Melinoë, irmã de Zagreus e princesa do submundo, que parte em uma missão para derrotar Cronos, o Titã do Tempo, que escapou de sua prisão e ameaça subverter a ordem dos deuses. O jogo mantém a mecânica de combate intensa e viciante de seu predecessor, com melhorias em habilidades, armas e a exploração de novos domínios do submundo. A narrativa se aprofunda na mitologia grega, explorando o papel de Melinoë como deusa dos fantasmas e sua conexão com Hades e Perséfone. Os jogadores encontrarão aliados divinos e mortais, cada um oferecendo poderes e bênçãos que modificam a jogabilidade de maneira única.',
+
+    //GOTYS
+
+    51325:'Cinco anos após os eventos do primeiro jogo, Ellie vive com Joel em Jackson, uma comunidade que representa um raro refúgio de segurança em um mundo devastado por infectados e facções hostis. No entanto, após uma tragédia devastadora, ela embarca em uma jornada intensa de vingança que a leva a Seattle. Durante a missão, Ellie enfrenta inimigos implacáveis, situações moralmente complexas e desafios que colocam à prova sua humanidade e suas convicções',
+
+    23027:'Neste aclamado jogo episódico baseado nos quadrinhos de Robert Kirkman, o jogador assume o papel de Lee Everett, um homem que, apesar de ser condenado por assassinato, ganha uma segunda chance em um mundo devastado por um apocalipse zumbi. Enquanto tenta sobreviver, Lee encontra Clementine, uma menina órfã que ele decide proteger a qualquer custo. A história aborda a construção de relações humanas em um ambiente caótico e perigoso, forçando o jogador a tomar decisões difíceis e moralmente desafiadoras que afetam profundamente o desenrolar da trama. ',
+
+    56184:'Leon S. Kennedy, um agente especial dos Estados Unidos, é enviado a uma vila isolada na Espanha para resgatar Ashley Graham, filha do presidente, que foi sequestrada por um culto misterioso chamado Los Illuminados. Ao chegar, ele descobre que os moradores da vila foram infectados por uma terrível praga conhecida como "Las Plagas", que os transforma em criaturas violentas e letais. Ao longo da missão, Leon enfrenta inimigos implacáveis, incluindo os chefes aterrorizantes, como o sinistro líder do culto, Osmund Saddler, e o traiçoeiro Ramon Salazar. ',
+
+    35016:'Um marco na série Madden NFL, este título é reconhecido por introduzir o modo "Franchise Owner", que permite aos jogadores assumir o controle total de um time da NFL. Além de comandar partidas emocionantes no campo, o jogador pode tomar decisões estratégicas como ajustar orçamentos, contratar treinadores e até realocar o time para uma nova cidade. ',
+
+    22508:'Ambientado em um futuro vibrante e otimista, Overwatch é um jogo de tiro em equipe que reúne uma variedade de heróis com habilidades únicas. Cada personagem tem sua própria história e papel no campo de batalha, desde mercenários habilidosos até cientistas inovadores e robôs com personalidades cativantes. Com modos de jogo dinâmicos e uma ênfase no trabalho em equipe, os jogadores competem para capturar objetivos e derrotar adversários em mapas diversificados e detalhados. Overwatch celebra a diversidade e a criatividade, oferecendo uma experiência inclusiva e divertida.',
+
+    3328:'Geralt de Rívia, um lendário caçador de monstros conhecido como bruxo, embarca em uma jornada épica para encontrar Ciri, sua filha adotiva, que está sendo perseguida pela temível Caçada Selvagem, um grupo sobrenatural que ameaça todo o continente. Enquanto explora um vasto mundo aberto cheio de detalhes e segredos, Geralt enfrenta escolhas morais complexas, intrigas políticas e batalhas intensas contra criaturas assustadoras. ',
+
+    22513:'Nathan Drake, um caçador de tesouros carismático, embarca em uma busca pelo lendário vale de Shambhala e pela mítica pedra Cintamani. A aventura começa com uma traição que o coloca em uma missão cheia de reviravoltas, perigos e paisagens exóticas. Enquanto enfrenta mercenários e desvenda enigmas antigos, Nathan é desafiado a superar seus próprios limites e proteger aqueles que ama. A ação cinematográfica e o enredo envolvente estabelecem um novo padrão para jogos de aventura.',
+
+    455597:'Quando Cody e May, um casal em crise, anunciam o divórcio, sua filha, Rose, acidentalmente lança um feitiço que os transforma em pequenos bonecos de pano. Para retornar às suas formas humanas, eles devem embarcar em uma jornada mágica e desafiadora em um mundo surreal, onde cada cenário apresenta mecânicas únicas e criativas. Enquanto trabalham juntos para superar obstáculos, eles redescobrem a força de sua relação e o valor da cooperação.',
+
+    4544:'John Marston, um ex-criminoso, é forçado pelo governo a capturar os membros de sua antiga gangue para garantir a liberdade de sua esposa e filho. Situado no final da era do Velho Oeste, o jogo apresenta uma narrativa rica em temas como redenção, família e a transição da fronteira americana. O vasto mundo aberto é repleto de encontros aleatórios, missões emocionantes e personagens inesquecíveis que tornam a experiência imersiva e marcante.',
+
+    50734:'Em um Japão fictício inspirado no período Sengoku, Sekiro, um shinobi leal, busca resgatar seu jovem mestre, o herdeiro divino, enquanto enfrenta inimigos formidáveis e chefes aterrorizantes. O jogo apresenta combates estratégicos baseados em habilidade e precisão, exigindo paciência e reflexos do jogador. A jornada é marcada por reviravoltas sombrias, cenários deslumbrantes e temas de honra, sacrifício e perseverança.',
+
+    22511:'Após dormir por 100 anos, Link desperta em um mundo devastado pela calamidade de Ganon, uma entidade maligna que ameaça destruir Hyrule. Com liberdade para explorar o vasto mundo aberto no próprio ritmo, o jogador enfrenta desafios, desvenda segredos e busca o poder necessário para derrotar Ganon. O jogo revoluciona o gênero de aventura com sua mecânica de exploração, narrativa envolvente e atmosfera encantadora.',
+
+    28559:'Como o Inquisidor, o jogador assume a responsabilidade de liderar uma força destinada a restaurar a ordem em Thedas, um mundo à beira do colapso devido a uma brecha no Véu que permite a entrada de demônios. Ao lado de aliados diversos, o jogador enfrenta batalhas épicas, toma decisões políticas e explora cenários majestosos. As escolhas feitas ao longo do jogo moldam o destino do mundo e dos personagens, proporcionando uma experiência verdadeiramente épica.',
+
+    5678:'O jogador assume o papel de um herói destinado a fechar os portais de Oblivion, uma dimensão demoníaca, e impedir a destruição de Tamriel pelo príncipe daedrico Mehrunes Dagon. Com liberdade para explorar um mundo vasto e repleto de vida, o jogo oferece missões envolventes, habilidades personalizáveis e escolhas que impactam o destino do reino.',
   };
 
   private manualRatings: { [id: number]: number } = {
@@ -153,11 +181,41 @@ export class GameService {
     804753: 86,
     962020: 75,
     974379: 81,
-    891238: 82
+    891238: 82,
 
+    //GOTYS
+    51325: 93,
+    23027: 89,
+    56184: 96,
+    35016: 94,
+    22508: 91,
+    3328:  92,
+    22513: 96,
+    455597: 88,
+    4544: 95,
+    50734: 90,
+    22511: 97,
+    28559: 85,
+    5678: 94,
   };
 
   private manualReleaseDates: { [id: number]: string } = {
+    //GOTYS
+    51325:'19 jun 2020',
+    23027:'24 abr 2012',
+    56184:'11 jan 2005',
+    35016:'12 ago 2003', 
+    22508:'23 mai 2016',
+    3328: '19 mai 2015',
+    22513:'13 out 2009',
+    455597:'26 mar 2021',
+    4544:'18 mai 2010',
+    50734:'22 mar 2019',
+    22511:'3 mar 2017',
+    28559:'18 mar 2014',
+    5678:'20 mar 2006',
+
+
     //MELHORES JOGOS
     28: '26 out 2018', 
     3498: '17 set 2013', 

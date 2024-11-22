@@ -20,9 +20,10 @@ export class MeuperfilPage implements OnInit {
   ) {}
 
   ngOnInit() {
+    // Verifica se o usuário está autenticado e carrega os dados iniciais
     onAuthStateChanged(this.auth, (user) => {
       if (user) {
-        console.log('Usuário autenticado:', user.uid); // Verifica se o usuário está logado
+        console.log('Usuário autenticado:', user.uid);
         this.userName = user.displayName || '';
         this.loadFavoriteGames(user.uid);
       } else {
@@ -30,6 +31,11 @@ export class MeuperfilPage implements OnInit {
         console.log('Usuário não está autenticado');
       }
     });
+
+    // Configura o intervalo para recarregar a página a cada 10 segundos (10000 ms)
+    setInterval(() => {
+      this.recarregarPagina();
+    }, 10000);
   }
 
   async loadFavoriteGames(userId: string) {
@@ -44,5 +50,9 @@ export class MeuperfilPage implements OnInit {
 
   redirectToLogin() {
     this.router.navigate(['/login']);
+  }
+
+  recarregarPagina() {
+    window.location.reload(); // Recarrega a página
   }
 }

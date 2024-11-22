@@ -1,76 +1,76 @@
 .ion-page {
-    margin-top: 30px;
-    color: white;
+  margin-top: 30px;
+  color: white;
 }
 .box{
-  background-color: black;
+background-color: black;
 }
 
 .Mylg {
-    position: absolute;
-    width: 178px;
-    height: 22px;
-    left: 100px;
-    top: 20px;
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 22px;
-    text-align: center;
-    color: #FFFFFF;
+  position: absolute;
+  width: 178px;
+  height: 22px;
+  left: 100px;
+  top: 20px;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
 }
-  
+
 .login {
-    position: absolute;
-    width: 100px;
-    height: 44px;
-    left: 300px;
-    top: 30px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    text-align: center;
-    color: #FFFFFF;
+  position: absolute;
+  width: 100px;
+  height: 44px;
+  left: 300px;
+  top: 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
+  color: #FFFFFF;
 }
-  
+
 .barra {
-    width: 300px;
-    height: 58px;
-    left: 45px;
-    top: 90px;
-    border-radius:30px;
+  width: 300px;
+  height: 58px;
+  left: 45px;
+  top: 90px;
+  border-radius:30px;
 }
 
 .GameContent {
-    margin-top: 100px;
-    font-weight: 700;
+  margin-top: 100px;
+  font-weight: 700;
 }
-    .cards-container {
-      display: flex;
-      justify-content: flex-end; /* Alinha os itens à direita */
-      align-items:center;
-      gap:0;
-    }
-  
-    ion-card {
-      flex: 0 0 120px;
-      background-color: transparent; 
-      box-shadow: none; 
-      margin: 1px;
-    }  
-    img {
-      width: 100px; 
-      height: 100px;
-      border: none; 
-      box-shadow: none; 
-      border-radius: 10px;
-    }
-  
-  ion-list{
-    background-color: black;
+  .cards-container {
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens à direita */
+    align-items:center;
+    gap:0;
   }
-  
+
+  ion-card {
+    flex: 0 0 120px;
+    background-color: transparent; 
+    box-shadow: none; 
+    margin: 1px;
+  }
+  img {
+    width: 100px; 
+    height: 100px;
+    border: none; 
+    box-shadow: none; 
+    border-radius: 10px;
+  }
+
+ion-list{
+  background-color: black;
+}
+
 .seemore{
 position: absolute;
 left: 310px;
@@ -81,80 +81,90 @@ font-weight: 200;
 }
 
 .seemore2{
-    position:absolute;
-    left: 310px;
-    bottom: 350px;
-    text-align: center;
-    color: #FFFFFF;
-    font-weight: 200; 
+  position:absolute;
+  left: 310px;
+  bottom: 350px;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 200; 
 }
 
 .seemore3{
-    position: absolute;
-    left: 310px;
-    bottom: 180px;
-    text-align: center;
-    color: #FFFFFF;
-    font-weight: 200;  
+  position: absolute;
+  left: 310px;
+  bottom: 180px;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 200;
 }
 
+.seemore4{
+  position: absolute;
+  left: 310px;
+  bottom: 10px;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 200;
+}
+
+
 h3{
-    font-weight: 700;
-    color: white;
+  font-weight: 700;
+  color: white;
 }
 .equipe{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
 ion-menu {
-  background-color: rgba(0, 0, 0, 0.499);
+background-color: rgba(0, 0, 0, 0.499);
 }
 ion-content {
-  --background: black;
+--background: black;
 }
 
 ion-list {
-  background-color: transparent; 
+background-color: transparent; 
 }
 
 .log{
-  border-radius: 200px;
-  color:rgb(0, 0, 0);
-  width: 50%;
-  border: none;
-  outline: none;
-  height: 40px;
-  font-size: 16px;
+border-radius: 200px;
+color:rgb(0, 0, 0);
+width: 50%;
+border: none;
+outline: none;
+height: 40px;
+font-size: 16px;
 }
 
 .iten{
-  --background: #000;
+--background: #000;
 }
 
 .custom-toolbar {
-  --background: #000;
+--background: #000;
 }
 
 .custom-title, .custom-label {
-  color: #fff; 
+color: #fff; 
 }
 
 .custom-label {
-  color: #fff;
-      
+color: #fff;
+
 } 
 
 .custom-item {
-   margin-bottom: 80px;
-  --background: #000;   
-  color: #000;
+ margin-bottom: 80px;
+--background: #000;
+color: #000;
 }
 
 .custom-content {
-  --background: #000; 
+--background: #000; 
 }
 
 ion-icon{
-  color: white;
+color: white;
 }
