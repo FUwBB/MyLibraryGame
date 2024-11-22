@@ -42,7 +42,9 @@
       </a>
     </ng-container>
     <ng-template #loggedInUser>
-      <ion-title class="login">{{ userName }}</ion-title>
+      <a [routerLink]="['/meuperfil']">
+        <ion-title class="login">{{ userName }}</ion-title>
+      </a>
     </ng-template>
   </div>
   
